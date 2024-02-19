@@ -1,0 +1,41 @@
+import React from "react";
+import "./footerabove.css";
+
+export default function FooterAbove() {
+  return (
+    <div className="footerabovediv">
+      <div className="footeraboverow">
+
+        <div className="footerabovecolumn1 gap-5">
+            <div className="info-card_icon">
+            <i className="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+            <div className="info-card_content">
+              <p className="info-card_text">Mobile Number</p>
+              <p>+91- 6370 995 573</p>
+            </div>
+        </div>
+
+        <div className="footerabovecolumn2 gap-5 bg-orange-500">
+                 <div className="info-card_icon">
+                 <i className="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+            <div className="info-card_content">
+              <p className="info-card_text">Mobile Number</p>
+              <p>+91- 82495 05348</p>
+            </div>
+        </div>
+        <div className="footerabovecolumn3 gap-5">
+
+             <div className="info-card_icon">
+             <i className="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+            <div className="info-card_content">
+              <p className="info-card_text">Mobile Number</p>
+              <p>+91- 7978699120</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  );
+}

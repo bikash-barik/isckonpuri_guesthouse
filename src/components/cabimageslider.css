@@ -1,0 +1,71 @@
+.cabimageslider{
+    height: 80vh;
+}
+
+.cabimageslider{
+    width: 95%;
+    height: 80vh;
+}
+
+.cabimagesliderslide{
+    width: 100%;
+    height: 80vh;
+}
+
+.cabimagesliderimage{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contentdiv{
+    position: relative;
+    bottom: 500px;
+    color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentdivheading1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.contentdivheading2, .contentdivheading3{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.imagesliderbtn1,.imagesliderbtn2{
+    font-size: 1rem;
+    padding:15px 25px;
+    background-color: #ff7c08;
+    color: white;
+    font-weight: 600;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+@media screen and (max-width:600px) {
+    .cabimageslider,.cabimageslider,.cabimagesliderslide,.cabimagesliderimage{
+        height: 60vh;
+    }
+    .contentdiv{
+        bottom: 350px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .contentdivheading1{
+        font-size: 2rem;
+    }
+
+    .contentdivheading2, .contentdivheading3{
+        font-size: 2.5rem;
+    }
+
+    .imagesliderbtn1,.imagesliderbtn2{
+        padding: 10px 15px;
+    }
+}

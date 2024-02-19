@@ -1,0 +1,28 @@
+
+.footersection1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.iconmenu{
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.iconmenu-item {
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.iconmenu-item:hover{
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+}

@@ -1,0 +1,115 @@
+.counter_part {
+    background-image: url(../assets/counter_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.counter_overlay {
+    display: flex;
+    width: 100%;
+    background-color: #231f40c4;
+    align-items: center;
+    justify-content: center;
+     padding: 50px 0px;
+}
+.counterrow{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.single_counter {
+    text-align: center;
+}
+
+.single_counter .text {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #231f4094;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.single_counter .text::after {
+    position: absolute;
+    content: "";
+    background: url(../assets/counter_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 235px;
+    height: 235px;
+    top: -20px;
+    left: -18px;
+    z-index: 1;
+    animation: rotate linear 60s infinite;
+    -webkit-animation: rotate linear 60s infinite;
+}
+
+.single_counter .text h2 {
+    color: var(--colorWhite);
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.single_counter .text h2::after {
+    position: absolute;
+    content: "+";
+    color: var(--colorWhite);
+    font-size: 40px;
+    top: -3px;
+    right: -25px;
+}
+
+.single_counter .text span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: var(--colorPrimary);
+    line-height: 50px;
+    color: var(--colorWhite);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.single_counter p {
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:600px) {
+    .counterrow{
+        flex-direction: column;
+    }
+}

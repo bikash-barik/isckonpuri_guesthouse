@@ -1,0 +1,203 @@
+.team,
+.team_page {
+    background: #EEF6EB;
+}
+
+.team .banner_shape_1 {
+    width: 200px;
+    height: 171px;
+    left: auto;
+    right: 10%;
+}
+
+.team .banner_shape_2 {
+    top: 80px;
+    left: 5%;
+}
+
+.team_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #EEF6EB;
+}
+.ourteamrow{
+    width: 95%;
+}
+
+.ourteamrow2{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.singleteamdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single_team {
+    border-radius: 10px;
+    background: var(--colorWhite);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 25px;
+    width: 80%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.single_team::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30%;
+    background: var(--colorPrimary);
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 25%, 50% 100%, 0 25%);
+}
+
+.single_team::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/chefs_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85px;
+    height: 150px;
+    bottom: 0px;
+    left: -15px;
+    transform: rotate(45deg);
+    opacity: .04;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.single_team_img {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--colorWhite);
+    border-radius: 50%;
+    box-shadow: var(--boxShadow);
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+    background: var(--colorPrimary);
+    position: relative;
+    z-index: 1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.single_team_img img {
+    border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.single_team_text h4 {
+    text-transform: capitalize;
+    color: var(--paraColor);
+    font-size: 24px;
+    font-family: var(--headingFont);
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.single_team_text p {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+}
+
+.single_team_text ul {
+    justify-content: center;
+    margin-top: 27px;
+}
+
+.single_team_text ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ff7c0821;
+    color: var(--colorPrimary);
+    font-size: 16px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 8px 10px;
+}
+
+.single_team_text ul li a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.team_slider .single_team {
+    margin: 25px 12px 0px 12px;
+}
+
+.single_team:hover {
+    margin-top: 20px;
+}
+
+.single_team:hover h4 {
+    color: var(--colorPrimary);
+}
+
+.single_team:hover .single_team_img img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+@media screen and (max-width:600px) {
+    .singleteamdiv {
+        grid-column: 1 / span 3;
+    }
+    
+}

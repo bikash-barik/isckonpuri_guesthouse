@@ -1,0 +1,46 @@
+.subsection{
+    background-image: url(../assets/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submainrow{
+    width: 70%;
+}
+
+.subrow1{
+    display: flex;
+    width: 100%;
+}
+
+.subrow2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.subrow1 img{
+    width: 25%;
+}
+
+
+.subrow2h3{
+    font-family: "Mansalva", cursive;
+    color: #ff7c08;
+}
+
+.subrow2 input{
+    margin-top: 30px;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .submainrow{
+        width: 95%;
+    }
+}

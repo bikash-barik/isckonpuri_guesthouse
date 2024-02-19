@@ -1,0 +1,82 @@
+.ncsection{
+    background-image: url(../assets/number-counter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* max-height: 50vh; */
+    margin-top: 30px;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ncrow{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nccolumn1{
+    width: 50%;
+}
+
+.nccolumn2{
+    width: 50%;
+}
+
+.nccolumnheading{
+    font-family: "Mansalva", cursive;
+    color: #ff7c08;
+}
+
+.nccolumnpara{
+    background: transparent;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.nccolumninner{
+    display: flex;
+    width: 100%;
+}
+
+.nccolumninner1{
+    width: 185px;
+    height: 185px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:600px) {
+    .ncrow{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .nccolumn1,.nccolumn2{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nccolumninner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nccolumninner1{
+        margin: 10px 0;
+    }
+
+    .nccolumnpara{
+        margin-top: 20px;
+    }
+}

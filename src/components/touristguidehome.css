@@ -1,0 +1,37 @@
+.tghomesection{
+    background-image: url(../assets/touristguide.jpeg);
+    background-position: 100% 100%;
+    background-size: cover;
+    height: 83vh;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.tghomesection::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 83vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.tghomerow{
+    width: 80%; 
+}
+
+.tgcolumn2heading{
+    color: white;
+    font-size: 3rem;
+    font-family: "Mansalva", cursive;
+}
+
+.tgcolumn3heading{
+    color: white;
+}

@@ -1,0 +1,86 @@
+.booktaxionlinesection {
+    display: grid;
+    place-items: center;
+}
+
+.booktaxirow {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booktaxicolumn1 {
+    width: 50%;
+}
+
+.booktaxicolumn2{
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+.booktaxih3{
+    color: #ff7c08;
+    font-weight: 600;
+}
+
+.booktaxih1{
+    font-weight: 700;
+}
+.carimage {
+    padding-left: 30px;
+    width: fit-content;
+}
+
+.wpcf7-form-control{
+    padding: 25px 15px;
+    background-color:#1B1B1B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+}
+
+.wpcf7-list-item {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    margin: 14px 0;
+}
+
+.wpcf7-list-item input{
+    margin-right: 10px;
+}
+
+.booktaxiinput{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.booktaxiinputdiv1{
+    width: 30%;
+    height: 100%;
+}
+
+.booktaxiinputdiv2{
+    width: 70%;
+    background-color: #eee;
+}
+
+@media screen and (max-width:600px) {
+    .booktaxirow{
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    .booktaxicolumn1,.booktaxicolumn2,.booktaxiinputdiv1,.booktaxiinputdiv2{
+        width: 100%;
+    }
+
+    .booktaxiinput{
+        flex-direction: column;
+    }
+
+}

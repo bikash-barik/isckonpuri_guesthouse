@@ -1,0 +1,39 @@
+.booknowection{
+    padding: 30px;
+    width: 50vh;
+    max-height: 80vh;
+    border-radius: 10px;
+    background-color: black;
+    backdrop-filter: blur(0.8);
+    opacity: 1;
+    z-index: 999;
+    border: 2px solid white;
+}
+
+.booknowheading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.booknowinput{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.booknowlabel{
+    color: white;
+    font-weight: 600;
+}
+
+.booknowinputbtn{
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    background-color: white !important; 
+}

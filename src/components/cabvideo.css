@@ -1,0 +1,57 @@
+.cabvideosection{
+    display: flex;
+    margin-top: 150px;
+}
+
+.cabvideocolumn1{
+    width: 40%;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+.cabvideocolumninner{
+    color: white;
+}
+
+.cabvideocolumn2{
+    width: 60%;
+}
+
+.cabvideoimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fw-light {
+    color: #ff7c08;
+}
+
+.cabvideobtn{
+    background-color: #ff7c08;
+    padding: 15px 25px;
+    color: white;
+    font-weight: 600;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.cabvideobtn:hover{
+    background-color: white;
+}
+
+
+@media screen and (max-width:600px) {
+    .cabvideosection{
+        flex-direction: column;
+    }
+
+    .cabvideocolumn1{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cabvideocolumn2{
+        width: 100%;
+    }
+}

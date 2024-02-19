@@ -1,0 +1,99 @@
+/* add slider start */
+
+.add_slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.addsliderrow{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.teamnextcolumn1{
+    background-image: url(../assets/offer_slider_1.png);
+}
+
+.teamnextcolumn2{
+    background-image: url(../assets/offer_slider_2.png);
+}
+.add_slider_single {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin:0 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.add_slider_single .text {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.add_slider_single h5 {
+    font-family: var(--cursiveFont);
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.add_slider_single h2 {
+    color: var(--colorBlack);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.add_slider_single a {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--colorBlack);
+    margin-top: 30px;
+    border-bottom: 1px solid var(--colorBlack);
+    padding-bottom: 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.add_slider_single a i {
+    margin-left: 5px;
+}
+
+.add_slider_single a:hover {
+    color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+@media screen and (max-width:600px) {
+    .addsliderrow{
+        flex-direction: column;
+    }
+    .add_slider_single{
+        margin: 0;
+        padding:20px;
+        margin-bottom: 20px;
+    }
+    .add_slider{
+        padding: 15px;
+    }
+}
+

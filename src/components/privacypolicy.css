@@ -1,0 +1,28 @@
+.privacypolicysection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(https://www.iskconpune.com/wp-content/uploads/2023/01/background-1.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    height: auto;
+}
+
+.privacypolicydiv{
+    width: 80%;
+    margin-top: 30px; 
+}
+
+.privacypolicydiv h1{
+    font-size: 3rem;
+}
+
+.privacypolicydiv h4{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:600px) {
+    .privacypolicydiv{
+        flex-direction: column;
+    }
+}

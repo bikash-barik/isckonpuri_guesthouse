@@ -1,0 +1,75 @@
+.servicetaxisection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.taxi-grid{
+    text-align: center;
+}
+
+.servicetaxiheadingdiv{
+    text-align: center;
+}
+
+.servicetaxih3{
+    color: #ff7c08;
+    text-transform: uppercase;
+}
+
+.servicetaxisliderdiv{
+    width: 80%;
+}
+
+.taxi-grid_img img {
+    background-color: #F7F7F7;
+    width: 100%;
+    padding: 50px 40px 100px 40px;
+}
+
+.taxi-grid_content {
+    background-color: #1B1B1B;
+    color: white;
+    padding: 0 40px 40px 40px;
+}
+
+.taxi-grid_info{
+    display: flex;
+    color: #74787C;
+    justify-content: space-between;
+}
+
+.taxi-grid_icon i {
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+    background-color:#ff7c08;
+    color: white;
+    border: 10px solid #F7F7F7;
+    font-size: 36px;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 27px;
+    padding: 10px;
+}
+
+.th-btn{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ff7c08;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 21px 31px;
+    border-radius: 0;
+    border: none;
+    margin-top: 15px;
+    width: 100%;
+}

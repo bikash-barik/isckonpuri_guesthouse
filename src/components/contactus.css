@@ -1,0 +1,88 @@
+.contactussection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactusrow1{
+    text-align: center;
+}
+
+.contactusheading{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Mansalva", cursive;
+    color: #ff7c08;
+}
+
+.contactuscolumnheading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contactusrow{
+    width: 80%;
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px 3px #eee;
+}
+
+.contactuscolumn1{
+    width: 70%;
+    padding: 20px;
+}
+
+.contactuscolumn2{
+    width: 30%;
+    padding: 20px;
+    background-color: #ff7c08;
+}
+
+.contactuscolumninnerdiv{
+    row-gap: 20px;
+    display: flex;
+    margin-top: 15px;
+}
+.contactusinput{
+width: 50%;
+padding: 15px;
+border: 1px solid #ccc;
+}
+
+.contactusinputbtn{
+    padding: 10px 20px;
+    /* width: 100%; */
+    border: none;
+    text-align: center;
+    background-color: #ff7c08 !important;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.contactcolumn2heading{
+    font-weight: 700;
+    font-size: 25px;
+    /* margin-left: 15px; */
+    color: white;
+}
+
+
+@media screen and (max-width:600px) {
+    .contactusrow{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .contactuscolumn1,.contactuscolumn2{
+        width: 100%;
+    }
+
+    .contactuscolumn1{
+        padding: 10px;
+    }
+}
+
