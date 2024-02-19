@@ -506,10 +506,10 @@ const ImageUpload = () => {
         </div>
       </section>
       :
-      <div className="uploadimagediv">
+      <div className="uploadimagediv pt-28">
         <div className="logoutbtndiv">
           <div className="logoutbtninnerdiv">
-            <button className="uploadimagebtn" onClick={handleLogout} style={{ borderRadius: "5px" }}>
+            <button className="logoutbtn" onClick={handleLogout} style={{ marginTop: "5px", borderRadius: "5px" }}>
               Logout
             </button>
           </div>
