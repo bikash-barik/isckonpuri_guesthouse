@@ -111,7 +111,7 @@ export default function Navbar() {
         </ul>
         <ul className="menu_icon">
             <li>
-              <a className="cart_icon" href="cart_view.html"><i className="fas fa-shopping-basket" aria-hidden="true"></i>
+              <a className="cart_icon" href="cart_view.html"><i class="fa-solid fa-basket-shopping"></i>
                 <span>05</span></a>
             </li>
            <li>
