@@ -73,7 +73,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -124,7 +124,7 @@ const ImageUpload = () => {
     if (file) {
       const storage = getStorage(firebase);
       const storageRef = ref(
-        storage,`Prasadam-Gallery/₹{file.name}`);
+        storage,`Prasadam-Gallery/${file.name}`);
 
       setLoading(true);
       setMessage({text:"Please wait until your data is submitted!..."});
@@ -163,7 +163,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -209,7 +209,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -253,7 +253,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -297,7 +297,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -349,7 +349,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -397,7 +397,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
@@ -443,7 +443,7 @@ const ImageUpload = () => {
       const firestore = firebase1.firestore();
       const storage = firebase1.storage();
       
-      const storageRef = storage.ref(`images/₹{file.name}`);
+      const storageRef = storage.ref(`images/${file.name}`);
       const uploadTask = storageRef.put(file);
 
       const snapshot = await uploadTask;
