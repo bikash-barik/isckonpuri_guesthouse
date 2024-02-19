@@ -35,37 +35,37 @@ export const ExploreSectionCardData = [
     imageUrl: "/images/ExploresectionImages/puri-temple.jpg",
     firstHeading: "Puri",
     secondHeading:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Puri is a coastal city and a municipality in the state of Odisha in eastern India. It is the district headquarters of Puri district and is situated on the Bay of Bengal, 60 kilometres (37 mi) south of the state capital of Bhubaneswar.",
   },
   {
     imageUrl: "/images/ExploresectionImages/konark-temple.jpg",
     firstHeading: "Konark",
     secondHeading:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Konark Sun Temple is a 13th-century CE (year 1250) Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.The temple is attributed to king Narasimhadeva I of the Eastern Ganga dynasty about 1250 CE",
   },
   {
-    imageUrl: "/images/ExploresectionImages/3.png",
+    imageUrl: "/images/ExploresectionImages/jagganath-puri-temple.jpg",
     firstHeading: "Sri Jagannath Puri Temple",
     secondHeading:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "The Jagannath Temple is an important Hindu temple dedicated to Jagannath, a form of Vishnu–one of the trinity of supreme divinity in Hinduism. It is located in Puri in the state of Odisha, situated on the eastern coast of India. ",
   },
   {
-    imageUrl: "/images/ExploresectionImages/4.png",
+    imageUrl: "/images/ExploresectionImages/chilika-lake.jpg",
     firstHeading: "Chilika Lake, Puri Beach",
     secondHeading:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      " Chilika Lake is the largest coastal lagoon in India and also the second largest salt water lagoon in the world after the New Caledonian barrier reef in New Caledonia. ",
   },
   {
-    imageUrl: "/images/ExploresectionImages/5.png",
+    imageUrl: "/images/ExploresectionImages/Narendra_Tank.jpg",
     firstHeading: "Narendra Tank",
     secondHeading:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "The tank was built in 15th century AD by Narendra Dev, who shouldered the responsibility of the kingdom with Purushottama. The tank is spread over a vast area, which features an island in the middle, housing a small temple called Chandana Mandapa which is connected to the southern bank with a bridge. ",
   },
   {
-    imageUrl: "/images/ExploresectionImages/6.png",
+    imageUrl: "/images/ExploresectionImages/lakshmi-temple.jpg",
     firstHeading: "Lakshmi Temple",
     secondHeading:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "the Lakshmi Temple is a small and beautiful shrine that draws people's attention in large numbers every year due to its historical significance. It features a presiding deity of the goddess Lakshmi who is also considered to be the deity of wealth and happiness.",
   },
 ];
 
