@@ -1,6 +1,6 @@
 import React from "react";
-import banner from "../assets/banner_bg.jpg";
-import Navbar from "./Navbar";
+// import banner from "../assets/banner_bg.jpg";
+// import Navbar from "./Navbar";
 import {
   HerosectionHeading,
   HerosectionSubHeading,
@@ -9,28 +9,28 @@ import SearchBar from "./SearchBar";
 import { HeroSectioncardData } from "../Textfiles/webiste-Content";
 import '../components/homepage.css';
 
-const cardData = [
-  {
-    imageUrl: "./images/imageOne.png",
-    firstHeading: "no credit card",
-    secondHeading: "Must required",
-  },
-  {
-    imageUrl: "./images/imageTwo.png",
-    firstHeading: "Money Back",
-    secondHeading: "100% Guarantee",
-  },
-  {
-    imageUrl: "./images/imageThree.png",
-    firstHeading: "Best Price",
-    secondHeading: "Good Discount",
-  },
-  {
-    imageUrl: "./images/imageFour.png",
-    firstHeading: "Customer care",
-    secondHeading: "24/7 free Support",
-  },
-];
+// const cardData = [
+//   {
+//     imageUrl: "./images/imageOne.png",
+//     firstHeading: "no credit card",
+//     secondHeading: "Must required",
+//   },
+//   {
+//     imageUrl: "./images/imageTwo.png",
+//     firstHeading: "Money Back",
+//     secondHeading: "100% Guarantee",
+//   },
+//   {
+//     imageUrl: "./images/imageThree.png",
+//     firstHeading: "Best Price",
+//     secondHeading: "Good Discount",
+//   },
+//   {
+//     imageUrl: "./images/imageFour.png",
+//     firstHeading: "Customer care",
+//     secondHeading: "24/7 free Support",
+//   },
+// ];
 
 export default function Herosection() {
   return (

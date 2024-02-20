@@ -56,6 +56,17 @@
   cursor: pointer;
 }
 
+.logoutbtn{
+    padding: 10px 15px;
+    background-color: #ff7c08;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;  
+}
+
 .loadingimagediv{
     display: flex;
     flex-direction: column;

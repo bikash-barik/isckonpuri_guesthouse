@@ -1,6 +1,6 @@
 // SortBox.js
 
-import React, { useState } from "react";
+import React from "react";
 import "./sortbox.css";
 
 const SortBox = () => {

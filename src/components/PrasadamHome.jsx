@@ -4,7 +4,7 @@ import './ourteam.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import chefimage from '../assets/chef_3.jpg';
+// import chefimage from '../assets/chef_3.jpg';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import BookNowForm from "./BookNowForm";

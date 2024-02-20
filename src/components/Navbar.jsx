@@ -1,25 +1,12 @@
 import React, { useState } from "react";
 import isckonpurilogo from '../assets/logos/logooooo-removebg-preview-removebg-preview.png';
-// import companyLogo from "../assets/logos/download.png";
-// import compnayLogo_Dark from "../assets/logos/logodark.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 import "./navbar.css";
 import BookNowForm from "./BookNowForm";
 
-let navData = [
-  { name: "Home", link: "/" },
-  {name:"Tour",link:"/tour"},
-  { name: "Guest House", link: "/room-suites" },
-  { name: "Prasadam", link: "/prasadam" },
-  { name: "Cab Booking", link: "/cab-booking" },
-  { name: "Tourist Guide", link: "/tourist-guide" },
-  { name: "Contact Us", link: "/contact-us" },
-];
-
 export default function Navbar() {
-  // const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   const [open, setOpne] = useState(false);
   const handleNavbarBackgroud = () => {
@@ -51,13 +38,13 @@ export default function Navbar() {
             <ul className="topbar_info flex flex-wrap d-none d-sm-flex px-8">
                 <li className="mx-4" ><a href="mailto:example@gmail.com"><i className="fas fa-envelope" aria-hidden="true"></i> info@iskconpuri.com</a>
                 </li>
-                <li className="d-none d-md-block mx-4"><a href="callto:123456789"><i className="fas fa-phone-alt" aria-hidden="true"></i>
+                <li className="d-none d-md-block mx-4"><a href="callto:123456789"><i className="fas fa-phone" aria-hidden="true"></i>
                 +91 824950-5348</a></li>
             </ul>
         </div>
         <div className="col-xl-6 col-sm-6 col-md-4">
             <ul className="topbar_icon">
-                <li className="topbarIconli"><a href="/"><i className="fas fa-coffee"></i></a> </li>
+                <li className="topbarIconli"><a href="/"><i class="fa-brands fa-facebook"></i></a> </li>
                 <li className="topbarIconli"><a href="/"><i className="fab fa-twitter"></i></a> </li>
                 <li className="topbarIconli"><a href="/"><i className="fab fa-linkedin-in"></i></a> </li>
                 <li className="topbarIconli"><a href="/"><i className="fab fa-behance"></i></a> </li>
@@ -111,11 +98,11 @@ export default function Navbar() {
         </ul>
         <ul className="menu_icon">
             <li>
-              <a className="cart_icon" href="cart_view.html"><i className="fas fa-shopping-basket" aria-hidden="true"></i>
+              <a className="cart_icon" href="cart_view.html"><i class="fa-solid fa-basket-shopping"></i>
                 <span>05</span></a>
             </li>
            <li>
-              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i></a>
+              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i>s</a>
            </li>
         </ul>
         
@@ -124,15 +111,3 @@ export default function Navbar() {
     </>
   );
 }
-
-// ₹{
-//   navbar
-//     ? "md:bg-white md:text-black shadow-md"
-//     : "md:bg-transparent md:text-white"
-// }
-
-// {navbar ? (
-//   <img src={compnayLogo_Dark} alt="" />
-// ) : (
-//   <img src={companyLogo} alt="" />
-// )}

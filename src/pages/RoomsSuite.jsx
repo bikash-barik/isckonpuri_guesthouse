@@ -7,7 +7,7 @@ import Label from "../components/Label";
 import PriceRangeSlider from "../components/PriceRangeSlider";
 import RanS from '../components/RanS';
 import hotelbookingloader from '../assets/hotelbookingreloader.gif';
-import TourPageHerosection from "../components/tour-page-components/TourPageHerosection";
+// import TourPageHerosection from "../components/tour-page-components/TourPageHerosection";
 import HotelDescription from "../components/tour-page-components/HotelDescription";
 import HotelDescriptionAndPrice from "../components/tour-page-components/HotelDescriptionAndPrice";
 // import RoomsCarausalSection from "../components/RoomsCarausalSection";

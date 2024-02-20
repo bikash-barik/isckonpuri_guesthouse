@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import packages1 from '../assets/packages1.jpg';
+// import packages1 from '../assets/packages1.jpg';
 import './packagesnext.css';
-import { FaLocationDot } from "react-icons/fa6";
+// import { FaLocationDot } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
 import BookNowForm from './BookNowForm';
 

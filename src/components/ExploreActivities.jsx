@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-import activityimg from '../assets/activity-img-2.jpg';
+// import activityimg from '../assets/activity-img-2.jpg';
 import './exploreactivity.css';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
