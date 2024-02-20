@@ -10,22 +10,22 @@ import {
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
-import HomePage from "./pages/HomePage";
-import Navbar from "./components/Navbar";
-import TourPage from "./pages/TourPage";
-import Footer from "./components/Footer";
-import RoomsSuite from "./pages/RoomsSuite";
-import PrasadamPage from './pages/PrasadamPage';
-import FooterAbove from "./components/FooterAbove";
-import CabPage from "./pages/CabPage";
-import TouristGuide from "./pages/TouristGuide";
-import ContactUsPage from "./pages/ContactUsPage";
-import FloatingActionButtons from "./components/FloatingButton";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
-import UploadData from "./pages/UploadData";
-import PopularPackageNext from "./components/PopularPackageNext";
-import Privacypolicy from "./pages/PrivacyPolicy";
+import HomePage from "./pages/HomePage.jsx";
+import Navbar from "./components/Navbar.jsx";
+import TourPage from "./pages/TourPage.jsx";
+import Footer from "./components/Footer.jsx";
+import RoomsSuite from "./pages/RoomsSuite.jsx";
+import PrasadamPage from './pages/PrasadamPage.jsx';
+import FooterAbove from "./components/FooterAbove.jsx";
+import CabPage from "./pages/CabPage.jsx";
+import TouristGuide from "./pages/TouristGuide.jsx";
+import ContactUsPage from "./pages/ContactUsPage.jsx";
+import FloatingActionButtons from "./components/FloatingButton.jsx";
+import SignUp from "./pages/SignUp.jsx";
+import Login from "./pages/Login.jsx";
+import UploadData from "./pages/UploadData.jsx";
+import PopularPackageNext from "./components/PopularPackageNext.jsx";
+import Privacypolicy from "./pages/PrivacyPolicy.jsx";
 
 //neew code
 import "./App.css";
