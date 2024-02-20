@@ -102,7 +102,7 @@ export default function Navbar() {
                 <span>05</span></a>
             </li>
            <li>
-              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i>s</a>
+              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i></a>
            </li>
         </ul>
         
