@@ -97,7 +97,6 @@ export default function Download() {
 
             <div className="downloadcolumn2">
                 <div className="sliderdiv">
-                {
                     <Slider {...settings} className="explorepurislider">
                         {
                          PrasadamGalleryData.map((item,index)=>(
@@ -112,7 +111,6 @@ export default function Download() {
                         }
                             
                     </Slider>
-                }
                 </div>
                
             </div>
