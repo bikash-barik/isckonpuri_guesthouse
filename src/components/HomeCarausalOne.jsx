@@ -1,5 +1,5 @@
 import React, { useRef,useEffect,useState } from "react";
-import { FaAngleLeft, FaAnglesLeft } from "react-icons/fa6";
+import { FaAngleLeft} from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import { CarausalOneData } from "../Textfiles/webiste-Content";
 import { HomeCarausalCardOne } from "./HomeCarausalCardOne ";

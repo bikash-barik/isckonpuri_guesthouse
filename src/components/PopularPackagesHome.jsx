@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./popularpackage.css";
-import packages1 from "../assets/packages1.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -74,7 +73,7 @@ export default function PopularPackagesHome() {
                         <div className="titlepricediv">₹{item.price}</div>
                       </div>
                       <p className="packagestiming">
-                        <i className="fa fa-clock"></i> {item.startdate} -{" "}
+                      <i class="fa-solid fa-clock"></i> {item.startdate} -{" "}
                         {item.enddate}
                       </p>
                     </div>

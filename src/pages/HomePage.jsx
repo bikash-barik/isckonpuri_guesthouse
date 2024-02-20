@@ -8,11 +8,11 @@ import SocialMediaSection from "../components/SocialMediaSection";
 import RoomsCarausalSection from "../components/RoomsCarausalSection";
 import EventSection from "../components/EventSection";
 import NewsLetterSection from "../components/NewsLetterSection";
-import Footer from "../components/Footer";
-import OnScrollRevealComponent from "../animation/Revel";
+// import Footer from "../components/Footer";
+// import OnScrollRevealComponent from "../animation/Revel";
 import hotelbookingloader from '../assets/hotelbookingreloader.gif';
 import PopularPackages from "../components/PopularPackagesHome";
-import DailyOffer from "../components/DailyOffer";
+// import DailyOffer from "../components/DailyOffer";
 import ServiceTaxi from "../components/ServiceTaxi";
 import OurTeam from "../components/PrasadamHome";
 

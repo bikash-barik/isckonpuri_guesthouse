@@ -7,6 +7,7 @@ export default function BookCapContact() {
       <div className="cabcontactrow">
         <div className="cabcontactcolumn1">
           <iframe
+            title="Google Maps - Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.0997896812632!2d85.81275457526819!3d19.793365929060656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c431d4aa6983%3A0xb0169724de0f847f!2sISKCON%20Puri!5e0!3m2!1sen!2sin!4v1703079253988!5m2!1sen!2sin"
             width="100%"
             height="750px"

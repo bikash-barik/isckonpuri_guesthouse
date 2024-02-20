@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Room from "../assets/Room.png";
-import { FaWifi } from "react-icons/fa";
+// import { FaWifi } from "react-icons/fa";
 import { RoomfeaturesSection } from "./RoomfeaturesSection";
 import BookNowForm from "./BookNowForm";
 import '../components/roomsection.css';

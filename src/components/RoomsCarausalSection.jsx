@@ -1,6 +1,6 @@
 import React, { useRef,useEffect,useState } from "react";
 import RoomCarausalCard from "./RoomCarausalCard";
-import { FaAngleLeft, FaAnglesLeft } from "react-icons/fa6";
+import { FaAngleLeft} from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
