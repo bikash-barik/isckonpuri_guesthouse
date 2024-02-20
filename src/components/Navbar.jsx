@@ -8,15 +8,15 @@ import { IoIosClose } from "react-icons/io";
 import "./navbar.css";
 import BookNowForm from "./BookNowForm";
 
-let navData = [
-  { name: "Home", link: "/" },
-  {name:"Tour",link:"/tour"},
-  { name: "Guest House", link: "/room-suites" },
-  { name: "Prasadam", link: "/prasadam" },
-  { name: "Cab Booking", link: "/cab-booking" },
-  { name: "Tourist Guide", link: "/tourist-guide" },
-  { name: "Contact Us", link: "/contact-us" },
-];
+// let navData = [
+//   { name: "Home", link: "/" },
+//   {name:"Tour",link:"/tour"},
+//   { name: "Guest House", link: "/room-suites" },
+//   { name: "Prasadam", link: "/prasadam" },
+//   { name: "Cab Booking", link: "/cab-booking" },
+//   { name: "Tourist Guide", link: "/tourist-guide" },
+//   { name: "Contact Us", link: "/contact-us" },
+// ];
 
 export default function Navbar() {
   // const navigate = useNavigate();
