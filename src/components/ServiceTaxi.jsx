@@ -6,6 +6,7 @@ import './servicetaxi.css';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import BookNowForm from "./BookNowForm";
+import { FaCar } from "react-icons/fa";
 
 export default function ServiceTaxi() {
   const [ServiceTaxiData, setServiceTaxiData] = useState([]);
@@ -80,7 +81,7 @@ export default function ServiceTaxi() {
                 </div>
                 <div className="taxi-grid_content">
                   <div className="taxi-grid_icon">
-                  <i className="fa fa-car"></i>
+                  <i class="fa-solid fa-car"></i>
                   </div>
                   <h3 className="taxi-grid_title">
                     <a href="https://themeholy.com/wordpress/taxiar/taxi-details/">
@@ -89,7 +90,7 @@ export default function ServiceTaxi() {
                   </h3>
                   <p className="taxi-grid_subtitle">{item.taxilocation}</p>
                   <p className="taxi-grid_info">
-                    Price: <br />
+                    Price:        <br />
                     <span className="text-white">₹{item.taxiinitialcharge}</span>
                   </p>
                   {/* <p className="taxi-grid_info">

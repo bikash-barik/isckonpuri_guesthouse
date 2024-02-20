@@ -74,7 +74,7 @@ export default function PopularPackagesHome() {
                         <div className="titlepricediv">₹{item.price}</div>
                       </div>
                       <p className="packagestiming">
-                        <i className="fa fa-clock"></i> {item.startdate} -{" "}
+                      <i class="fa-solid fa-clock"></i> {item.startdate} -{" "}
                         {item.enddate}
                       </p>
                     </div>

@@ -3,7 +3,6 @@ import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
-  useRoutes,
   useNavigate,
 } from "react-router-dom";
 
@@ -30,10 +29,6 @@ import Privacypolicy from "./pages/PrivacyPolicy";
 
 //neew code
 import "./App.css";
-// import loadingImage from "./images/harekrishna.gif";
-// import { ToastContainer, toast } from "react-custom-alert";
-// import "react-custom-alert/dist/index.css";
-
 
 const isAuthenticated = () => {
   // Check Firebase if there's a logged-in user
@@ -155,7 +150,6 @@ function App() {
   return (
     <div className="App">
         <RouterProvider router={router} />
-      {/* <ToastContainer floatingTime={3000} /> */}
     </div>
   );
 }

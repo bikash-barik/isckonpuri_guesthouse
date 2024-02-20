@@ -8,7 +8,7 @@ export default function FooterAbove() {
 
         <div className="footerabovecolumn1 gap-5">
             <div className="info-card_icon">
-            <i className="fas fa-phone-alt" aria-hidden="true"></i>
+            <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="info-card_content">
               <p className="info-card_text">Mobile Number</p>
@@ -18,7 +18,7 @@ export default function FooterAbove() {
 
         <div className="footerabovecolumn2 gap-5 bg-orange-500">
                  <div className="info-card_icon">
-                 <i className="fas fa-phone-alt" aria-hidden="true"></i>
+                 <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="info-card_content">
               <p className="info-card_text">Mobile Number</p>
@@ -28,7 +28,7 @@ export default function FooterAbove() {
         <div className="footerabovecolumn3 gap-5">
 
              <div className="info-card_icon">
-             <i className="fas fa-phone-alt" aria-hidden="true"></i>
+             <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="info-card_content">
               <p className="info-card_text">Mobile Number</p>

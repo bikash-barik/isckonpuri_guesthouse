@@ -51,13 +51,13 @@ export default function Navbar() {
             <ul className="topbar_info flex flex-wrap d-none d-sm-flex px-8">
                 <li className="mx-4" ><a href="mailto:example@gmail.com"><i className="fas fa-envelope" aria-hidden="true"></i> info@iskconpuri.com</a>
                 </li>
-                <li className="d-none d-md-block mx-4"><a href="callto:123456789"><i className="fas fa-phone-alt" aria-hidden="true"></i>
+                <li className="d-none d-md-block mx-4"><a href="callto:123456789"><i className="fas fa-phone" aria-hidden="true"></i>
                 +91 824950-5348</a></li>
             </ul>
         </div>
         <div className="col-xl-6 col-sm-6 col-md-4">
             <ul className="topbar_icon">
-                <li className="topbarIconli"><a href="/"><i className="fas fa-coffee"></i></a> </li>
+                <li className="topbarIconli"><a href="/"><i class="fa-brands fa-facebook"></i></a> </li>
                 <li className="topbarIconli"><a href="/"><i className="fab fa-twitter"></i></a> </li>
                 <li className="topbarIconli"><a href="/"><i className="fab fa-linkedin-in"></i></a> </li>
                 <li className="topbarIconli"><a href="/"><i className="fab fa-behance"></i></a> </li>
