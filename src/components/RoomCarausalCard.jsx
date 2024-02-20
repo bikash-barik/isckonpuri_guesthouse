@@ -19,7 +19,7 @@ export default function RoomCarausalCard({item}) {
     </div>
 
 
-    <div className="md:min-w-[410px] md:h-[550px] min-w-[340px] h-[590px] cursor-pointer border border-orange-500 shadow-lg rounded overflow-hidden">
+    <div className="md:min-w-[410px] md:h-[550px] min-w-[320px] h-[590px] cursor-pointer border border-orange-500 shadow-lg rounded overflow-hidden">
       <div className="w-full h-[300px]">
         <img
           src={item.imageUrl}

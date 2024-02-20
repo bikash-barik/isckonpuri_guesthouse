@@ -41,14 +41,14 @@ export default function RoomsCarausalSection() {
   return (
     <div className="w-full h-auto md:mb-10 md:px-16 px-4 py-8">
       <div className="w-full my-8">
-        <h1 className="text-4xl   underline decoration-orange-500 w-full text-center tracking-wide">
+        <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
           Best Rooms
         </h1>
       </div>
       <div
         ref={boxxRef}
         id="container"
-        className="w-full overflow-hidden scroll-smooth flex space-x-10 md:px-10 "
+        className="w-full overflow-hidden scroll-smooth flex space-x-4 md:px-10 "
       >
         {
         BestRoomsData.map((item, index) => (

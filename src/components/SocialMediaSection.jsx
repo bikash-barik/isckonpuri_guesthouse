@@ -24,7 +24,7 @@ export default function SocialMediaSection() {
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
       Explore These Places
       </h1>
-      <div className="flex w-full pb-6 justify-around mt-10 overflow-x-scroll md:overflow-hidden">
+      <div className="flex w-full px-4 pb-6 justify-around mt-10 gap-10 overflow-x-scroll md:overflow-hidden">
         {
           ExplorePlaceData.length > 0 ?
           ExplorePlaceData.map((item,index) =>{

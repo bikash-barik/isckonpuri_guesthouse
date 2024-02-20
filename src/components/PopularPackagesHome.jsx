@@ -61,7 +61,7 @@ export default function PopularPackagesHome() {
             {
             PopularPackagesData.map((item, index) => (
               <>
-                <div key={index} className="packagesinnercolumn1 pb-6" onClick={() => handlePackageClick(item)}>
+                <div key={index} className="packagesinnercolumn1 mb:pb-6" onClick={() => handlePackageClick(item)}>
                   <div className="packagescolumninner">
                     <div className="packagesinnercolumnimagediv">
                       <img className="popularpackageimg" src={item.imageUrl} alt={item.location} />

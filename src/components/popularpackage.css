@@ -33,6 +33,7 @@
     margin: 10px 20px;
     padding: 0 20px;
     cursor: pointer;
+    /* width: 100%; */
 }
 
 .packagescolumninner{
@@ -71,6 +72,11 @@
 @media screen and (max-width:600px) {
     .packagescolumntour {
         grid-column: 1 / span 3;
+    }
+
+    .packagesinnercolumn1{
+        margin: 10px;
+        padding: 0;
     }
     
 }
