@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import './adventureidea.css';
-import homeadventureidea from '../assets/home-adventure-idea-01.jpg';
+// import homeadventureidea from '../assets/home-adventure-idea-01.jpg';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 

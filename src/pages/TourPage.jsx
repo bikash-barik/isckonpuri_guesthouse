@@ -1,9 +1,9 @@
 import React from "react";
 import TourPageHerosection from "../components/tour-page-components/TourPageHerosection";
-import HotelDescription from "../components/tour-page-components/HotelDescription";
-import HotelDescriptionAndPrice from "../components/tour-page-components/HotelDescriptionAndPrice";
-import RoomsCarausalSection from "../components/RoomsCarausalSection";
-import HotelFacilities from "../components/tour-page-components/HotelFacilities";
+// import HotelDescription from "../components/tour-page-components/HotelDescription";
+// import HotelDescriptionAndPrice from "../components/tour-page-components/HotelDescriptionAndPrice";
+// import RoomsCarausalSection from "../components/RoomsCarausalSection";
+// import HotelFacilities from "../components/tour-page-components/HotelFacilities";
 import PopularPackages from "../components/PopularPackages";
 import TourDescription from "../components/TourDescription";
 

@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { phoneNumber } from "../Textfiles/webiste-Content";
 import { email } from "../Textfiles/webiste-Content";
 import { address } from "../Textfiles/webiste-Content";
-import { IoMdSend } from "react-icons/io";
+// import { IoMdSend } from "react-icons/io";
 import './footer.css';
 import { Link } from "react-router-dom";
 

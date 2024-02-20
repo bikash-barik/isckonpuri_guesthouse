@@ -6,7 +6,6 @@ import './servicetaxi.css';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import BookNowForm from "./BookNowForm";
-import { FaCar } from "react-icons/fa";
 
 export default function ServiceTaxi() {
   const [ServiceTaxiData, setServiceTaxiData] = useState([]);

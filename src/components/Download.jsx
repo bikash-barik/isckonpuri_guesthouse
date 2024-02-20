@@ -3,7 +3,6 @@ import './download.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import downslider from '../assets/download_slider_3.jpg'
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import { initializeApp } from "firebase/app";
 
@@ -72,7 +71,7 @@ export default function Download() {
                             <h2>Easy To Order Our All Food</h2>
                             <ul className="flex flex-wrap">
                                 <li>
-                                    <a href="#">
+                                    <a href="/">
                                         <span className="icon"><i className="fab fa-google-play" aria-hidden="true"></i></span>
                                         <p>
                                             <span>Available on the</span>
@@ -81,7 +80,7 @@ export default function Download() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/">
                                         <span className="icon"><i className="fab fa-apple" aria-hidden="true"></i></span>
                                         <p>
                                             <span>Download on the</span>

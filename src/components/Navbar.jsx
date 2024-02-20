@@ -1,25 +1,12 @@
 import React, { useState } from "react";
 import isckonpurilogo from '../assets/logos/logooooo-removebg-preview-removebg-preview.png';
-// import companyLogo from "../assets/logos/download.png";
-// import compnayLogo_Dark from "../assets/logos/logodark.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 import "./navbar.css";
 import BookNowForm from "./BookNowForm";
 
-let navData = [
-  { name: "Home", link: "/" },
-  {name:"Tour",link:"/tour"},
-  { name: "Guest House", link: "/room-suites" },
-  { name: "Prasadam", link: "/prasadam" },
-  { name: "Cab Booking", link: "/cab-booking" },
-  { name: "Tourist Guide", link: "/tourist-guide" },
-  { name: "Contact Us", link: "/contact-us" },
-];
-
 export default function Navbar() {
-  // const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   const [open, setOpne] = useState(false);
   const handleNavbarBackgroud = () => {
@@ -115,7 +102,7 @@ export default function Navbar() {
                 <span>05</span></a>
             </li>
            <li>
-              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i></a>
+              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i>s</a>
            </li>
         </ul>
         
@@ -124,15 +111,3 @@ export default function Navbar() {
     </>
   );
 }
-
-// ₹{
-//   navbar
-//     ? "md:bg-white md:text-black shadow-md"
-//     : "md:bg-transparent md:text-white"
-// }
-
-// {navbar ? (
-//   <img src={compnayLogo_Dark} alt="" />
-// ) : (
-//   <img src={companyLogo} alt="" />
-// )}

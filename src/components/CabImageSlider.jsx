@@ -3,8 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import image1 from '../assets/puri.jpg';
-import image2 from '../assets/banner_bg.jpg';
-import image3 from '../assets/footer-bg.jpg';
 import './cabimageslider.css';
 
 export default function CabImageSlider() {

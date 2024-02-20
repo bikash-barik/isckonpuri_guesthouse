@@ -1,6 +1,6 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
-import DatePicker from "./DatePicker";
+// import DatePicker from "./DatePicker";
 
 export default function SearchBar() {
   return (

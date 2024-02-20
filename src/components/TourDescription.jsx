@@ -1,12 +1,12 @@
 import React from "react";
 import Heading from "./Heading";
-import { TbAirConditioningDisabled } from "react-icons/tb";
-import { MdOutlineSportsGymnastics } from "react-icons/md";
-import { SiInternetexplorer } from "react-icons/si";
-import { LiaCocktailSolid } from "react-icons/lia";
-import { FaWifi } from "react-icons/fa6";
+// import { TbAirConditioningDisabled } from "react-icons/tb";
+// import { MdOutlineSportsGymnastics } from "react-icons/md";
+// import { SiInternetexplorer } from "react-icons/si";
+// import { LiaCocktailSolid } from "react-icons/lia";
+// import { FaWifi } from "react-icons/fa6";
 import { FaTicketAlt } from "react-icons/fa";
-import { SiYourtraveldottv } from "react-icons/si";
+// import { SiYourtraveldottv } from "react-icons/si";
 import { MdLocalHotel } from "react-icons/md";
 import { FaBowlFood } from "react-icons/fa6";
 import { FaHandsHelping } from "react-icons/fa";
