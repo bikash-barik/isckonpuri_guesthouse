@@ -32,7 +32,7 @@ export default function DailyOffer() {
           <div className="col-md-8 col-lg-7 col-xl-6">
             <div className="section_heading mb_25 text-center">
               <h4>Prasadam</h4>
-              <h2>up to 55% off for this day</h2>
+              <h2>up to 35% off for this day</h2>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function DailyOffer() {
                 <div>
                   <div className="flex items-center justify-center" style={{ width: '100%', display: 'inline-block' }}>
                     <div className="offer_item_single">
-                      <span>55% off</span>
+                      <span>35% off</span>
                       <a className="title" href="menu_details.html">
                         Mahaprasad
                       </a>
@@ -54,7 +54,9 @@ export default function DailyOffer() {
                           </Link>
                         </li>
                         <li>
-                         <Link to="/"><i className="fa fa-heart"></i> saurav</Link>
+                          <a href="/">
+                          <i className="fa fa-heart"></i>
+                          </a>
                         </li>
                         <li>
                           <a href="/">
@@ -77,7 +79,7 @@ export default function DailyOffer() {
                 <div>
                   <div className="col-xl-4" style={{ width: '100%', display: 'inline-block' }}>
                     <div className="offer_item_single">
-                      <span>45% off</span>
+                      <span>35% off</span>
                       <a className="title" href="menu_details.html">
                         Prasadam
                       </a>
@@ -115,7 +117,7 @@ export default function DailyOffer() {
                 <div>
                   <div className="col-xl-4" style={{ width: '100%', display: 'inline-block' }}>
                     <div className="offer_item_single">
-                      <span>45% off</span>
+                      <span>35% off</span>
                       <a className="title" href="menu_details.html">
                         Raj Bhog
                       </a>
