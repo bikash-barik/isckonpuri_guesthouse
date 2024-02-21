@@ -55,10 +55,10 @@ export default function ExploreActivities() {
             {
                 ActivityData.map((item,index)=>(
                     <>
-                    <div className="explorediv px-6" key={index}>
+                    <div className="explorediv md:px-6" key={index}>
                     <div className="exploreinnerdiv border">
                     <div className="exploreimgdiv">
-                        <img src={item.imageUrl} alt="" />
+                        <img className='exploreimage' src={item.imageUrl} alt="" />
                     </div>
                     <div className="exploreparadiv mt-4">
                         <h3 className='activityname'>{item.activityname}</h3>
