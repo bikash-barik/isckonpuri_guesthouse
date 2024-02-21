@@ -29,6 +29,7 @@ import Privacypolicy from "./pages/PrivacyPolicy.jsx";
 
 //neew code
 import "./App.css";
+import NotFound from "./pages/NotFound.jsx";
 
 const isAuthenticated = () => {
   // Check Firebase if there's a logged-in user
@@ -136,10 +137,10 @@ const routes = [
       }
     ],
   },
-  // {
-  //   path: "/*",
-  //   element: <NotFound />,
-  // },
+  {
+    path: "/*",
+    element: <NotFound/>,
+  },
 ];
 
 const router = createBrowserRouter(routes);
