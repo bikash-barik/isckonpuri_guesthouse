@@ -14,13 +14,13 @@ export default function NumberCounter() {
         <div className="nccolumn2">
             <div className="nccolumninner">
                 <div className="nccolumninner1 text-center">23+ <br /> Cities</div>
-                <div className="nccolumninner1 text-center">7 <br />Countries</div>
+                <div className="nccolumninner1 text-center">3 <br />Countries</div>
                 <div className="nccolumninner1 text-center">250+ <br />Outlates</div>
             </div>
 
         <div className='mt-6'>
             <p className='text-2xl'>“Life shrinks or expands in proportion to one’s courage.”</p>
-            <p className='text-2xl font-bold'>- Anais Nin</p>
+            <p className='text-2xl font-bold'>- Iskconpuri</p>
         </div>
         </div>
 

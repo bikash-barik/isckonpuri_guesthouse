@@ -7,7 +7,7 @@ export default function TouristGuideHome() {
     <section className='tghomesection pt-20'>
         <div className="tghomerow">
             <div className="tghomecolumn1 flex justify-center">
-                <img src={tghomeimg} alt="" />
+                <img src="{tghomeimg}" alt="" />
             </div>
 
             <div className="tgcolumn2 text-center">

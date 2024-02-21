@@ -66,7 +66,7 @@ export default function AdventureIdeas() {
                 </div>
 
                 <div className="adideabtndiv">
-                    <button>Enquire</button>
+                    <button>Book Now</button>
                 </div>
             </div>
             </>

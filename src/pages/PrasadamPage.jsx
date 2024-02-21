@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import "../components/prasadampage.css";
 import sliderimage from '../assets/slider_img_1.png' 
-// import DailyOffer from '../components/DailyOffer';
+import DailyOffer from '../components/DailyOffer';
 import BookaTable from '../components/BookaTable';
 // import OurTeam from '../components/PrasadamHome';
 import OurTeamNext from '../components/OurTeamNext';
@@ -53,7 +53,7 @@ export default function PrasadamPage() {
             </div>
           </div>
     </div>
-    {/* <DailyOffer/> */}
+    <DailyOffer/>
     <BookaTable/>
     <Prasadam/>
     <OurTeamNext/>
