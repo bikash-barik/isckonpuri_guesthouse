@@ -36,16 +36,23 @@
 .adidearow1{
     padding-top: 50px;
     width: 85%;
-    display: flex;
+    /* display: flex; */
 }
 
 .adideacolumn1{
     margin: 0 25px;
 }
 
+.adiimagediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .adiimagediv img{
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
+    height: 300px;
 }
 
 .adideaparadiv{

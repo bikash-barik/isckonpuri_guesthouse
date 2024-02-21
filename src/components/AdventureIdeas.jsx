@@ -3,6 +3,9 @@ import './adventureidea.css';
 // import homeadventureidea from '../assets/home-adventure-idea-01.jpg';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
 
 export default function AdventureIdeas() {
     const [HeritageData, setHeritageData] = useState([]);
@@ -20,6 +23,25 @@ export default function AdventureIdeas() {
         return () => unsubscribe();
       }, []);
 
+      const settings = {
+        infinite: true,
+        speed: 500,
+        loop: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      };
+
   return (
     <section className='adideassection'>
         <div className="adidearow">
@@ -27,8 +49,11 @@ export default function AdventureIdeas() {
             <h1 className='adideah1 text-5xl text-center font-bold'>Explore the Dham's rich heritage</h1>
         </div>
         <div className="adidearow1">
-        {
-            HeritageData.map((item,index)=>(
+
+        { 
+        <Slider {...settings}>
+            {
+             HeritageData.map((item,index)=>(
                 <>
                 <div className="adideacolumn1 mb-6" key={index}>
                 <div className="adiimagediv">
@@ -45,7 +70,8 @@ export default function AdventureIdeas() {
                 </div>
             </div>
             </>
-            ))
+            ))}
+        </Slider>   
         }
         </div>
        

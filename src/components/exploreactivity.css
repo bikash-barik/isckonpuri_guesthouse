@@ -25,3 +25,12 @@ font-weight: 700;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.exploreimage{
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    
+}
