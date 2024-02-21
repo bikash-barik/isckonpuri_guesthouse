@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./dailyoffer.css";
+// import "./dailyoffer.css";
 import "./ourteam.css";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
@@ -64,6 +64,7 @@ export default function Prasadam() {
               <div className="single_team">
                 <div className="single_team_img">
                   <img
+
                     src={item.imageUrl}
                     alt="team"
                     className="img-fluid w-100"

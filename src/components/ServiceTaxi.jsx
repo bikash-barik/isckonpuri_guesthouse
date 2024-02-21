@@ -72,7 +72,8 @@ export default function ServiceTaxi() {
               <div key={index} className="col-md-6 col-lg-4 md:px-8">
               <div className="taxi-grid">
                 <div className="taxi-grid_img flex align-middle justify-center">
-                  <img
+                  <img 
+                    className="servicetaxiimage"
                     decoding="async"
                     src={item.imageUrl}
                     alt="taxi_2_1 4 1"

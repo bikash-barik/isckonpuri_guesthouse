@@ -195,6 +195,10 @@
     -o-transform: scale(1.05);
 }
 
+.img-fluid{
+    height: 160px;
+}
+
 @media screen and (max-width:600px) {
     .singleteamdiv {
         grid-column: 1 / span 3;
