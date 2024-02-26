@@ -44,6 +44,7 @@
     row-gap: 20px;
     display: flex;
     margin-top: 15px;
+    width: 100%;
 }
 .contactusinput{
 width: 50%;

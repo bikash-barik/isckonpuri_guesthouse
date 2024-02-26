@@ -24,7 +24,7 @@ export default function HotelDescriptionAndPrice() {
 
          
       </div>
-      <div className="md:w-[25%] w-full md:mt-0 mt-2 bg-orange-500 flex items-center justify-center">
+      <div className="md:w-[25%] w-full md:mt-0 h-[160px] py-2 bg-orange-500 flex items-center justify-center">
         <div>
           <p className="uppercase text-xl text-white">price</p>
           <p className="capitalize md:text-3xl text-2xl text-white font-semibold">₹5999.00 night</p>

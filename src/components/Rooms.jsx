@@ -92,16 +92,16 @@ const Rooms = ({roomdata}) => {
                 </div>
               ))}
             </Slider>
-            <div className=" gap-10">
+            <div className=" gap-2">
               <button
                 onClick={handleMainSliderNext}
-                className="mt-2 ml-20 text-center px-2 py-2 bg-orange-500 border border-orange-500 text-white text-xl font-bold rounded hover:bg-transparent hover:text-black hover:border-black transition-all duration-75"
+                className="mt-2 ml-28 text-center px-2 py-2 bg-orange-500 border border-orange-500 text-white text-xl font-bold rounded hover:bg-transparent hover:text-black hover:border-black transition-all duration-75"
               >
                 <FaAngleRight />
               </button>
               <button
                 onClick={handleMainSliderPrev}
-                className="px-2 py-2 ml-20 bg-orange-500 border border-orange-500 text-white text-xl font-bold rounded hover:bg-transparent hover:text-black hover:border-black"
+                className="px-2 py-2 ml-8 bg-orange-500 border border-orange-500 text-white text-xl font-bold rounded hover:bg-transparent hover:text-black hover:border-black"
               >
                 <FaAngleLeft />
               </button>
@@ -125,8 +125,8 @@ const Rooms = ({roomdata}) => {
           <div className="view2">
             <div className="distance">
               {roomdata.roomdescription}
-              <img src={room.icon} alt=""></img>
-              <p>5.9 KM</p>
+              {/* <img src={room.icon} alt=""></img> */}
+              {/* <p>5.9 KM</p> */}
             </div>
           </div>
           <span className="lorem">{room.description}</span>

@@ -30,7 +30,7 @@ const ContactUsPage = () => {
           </div>
 
           <div className="contactuscolumninnerdiv">
-                <textarea name="" className='contactusinput w-full' id="" cols="30" rows="10" placeholder='Message'>
+                <textarea name="" className='contactusinput' id="" cols="50" rows="10" placeholder='Message'>
                   Message
                 </textarea>
           </div>

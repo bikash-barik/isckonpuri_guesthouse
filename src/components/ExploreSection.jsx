@@ -20,7 +20,7 @@ export default function ExploreSection() {
             description={item.secondHeading}
           />
         ))}
-        <ExploreSectioncard ExploreSectionHeading="Explore Section" />
+        {/* <ExploreSectioncard ExploreSectionHeading="Explore Section" /> */}
       </section>
     </div>
   );

@@ -5,6 +5,9 @@ import { CarausalOneData } from "../Textfiles/webiste-Content";
 import { HomeCarausalCardOne } from "./HomeCarausalCardOne ";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function HomeCarausalOne() {
   const [VisitingSpotData, setVisitingSpotData] = useState([]);
@@ -42,6 +45,26 @@ export default function HomeCarausalOne() {
     return () => unsubscribe();
   }, []);
 
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    loop: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="w-full h-auto mb-10 pt-8 md:px-16 px:0 md:mb-6">
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
@@ -50,9 +73,11 @@ export default function HomeCarausalOne() {
       <div
         ref={boxRef}
         id="carausalContainer"
-        className="mt-10 flex overflow-hidden scroll-smooth"
+        className="mt-10"
       >
         {
+          <Slider {...settings} >
+            {
         VisitingSpotData.length > 0 ?
         VisitingSpotData.map((item, index) => (
           <HomeCarausalCardOne
@@ -70,8 +95,11 @@ export default function HomeCarausalOne() {
           />
         ))
         }
+          </Slider>
+        }
+        
       </div>
-      <div className="w-full mt-8 text-center ">
+      {/* <div className="w-full mt-8 text-center ">
         <button
           onClick={handlePressNext}
           className=" text-center px-4 py-2 border border-black text-orange-500 text-xl font-bold rounded hover:bg-red-600 hover:text-white hover:border-none transition-all duration-75"
@@ -84,7 +112,7 @@ export default function HomeCarausalOne() {
         >
           <FaAngleLeft />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -39,13 +39,13 @@ export default function HomePage() {
       <ImageContentSection />
       <HomeCarausalOne />
       <RoomSection />
-      <SocialMediaSection />
+      {/* <SocialMediaSection /> */}
       <PopularPackages/>
       <RoomsCarausalSection />
       {/* <DailyOffer/> */}
       <OurTeam/>
       <ServiceTaxi/>
-      <EventSection />
+      {/* <EventSection /> */}
       <NewsLetterSection />
       </>
       )}

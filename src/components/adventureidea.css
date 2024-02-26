@@ -103,4 +103,8 @@
     .adidearow1{
         flex-direction: column;
     }
+
+    .adiimagediv img{
+        width: 100%;
+    }
 }
