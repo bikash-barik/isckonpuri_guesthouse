@@ -641,27 +641,6 @@ const ImageUpload = () => {
 
           <div className="uploadimagecolumn">
             <div className="uploadimagecolumninnerdiv">
-              <h3 className="mb-8 text-center font-bold text-2xl">Explore Places Section: </h3>
-              <input className="mb-4" type="file" onChange={handleFileChange} />
-
-              <label htmlFor="" className="mb-2">Enter Place Name</label>
-              <input type="text" className="px-4 py-4 mb-2 border" value={placename} onChange={(e) => setplacename(e.target.value)}/>
-
-              <button className="uploadimagebtn" onClick={handleUploadExplorePlaces} style={{ marginTop: "5px", borderRadius: "5px" }}>Upload</button>
-            </div>
-          </div>
-
-          <div className="uploadimagecolumn">
-            <img className="uploadimageimage" src={exploreplacesimage} alt="exploreplacesimage"></img>
-          </div>
-
-        </div>
-
-
-         <div className="uploadimagerow">
-
-          <div className="uploadimagecolumn">
-            <div className="uploadimagecolumninnerdiv">
               <h3 className="mb-8 text-center font-bold text-2xl">Best Rooms Section: </h3>
               <input className="mb-4" type="file" onChange={handleFileChange} />
 

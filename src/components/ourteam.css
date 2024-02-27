@@ -119,6 +119,7 @@
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    height: 160px;
 }
 
 .single_team_text h4 {
@@ -194,10 +195,10 @@
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
-
+/* 
 .img-fluid{
     height: 160px;
-}
+} */
 
 @media screen and (max-width:600px) {
     .singleteamdiv {
