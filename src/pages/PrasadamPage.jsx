@@ -7,26 +7,26 @@ import BookaTable from '../components/BookaTable';
 import OurTeamNext from '../components/OurTeamNext';
 import Count from '../components/Count';
 import Download from '../components/Download';
-import prasadamreloader from '../assets/prasadamreloader.gif';
+// import prasadamreloader from '../assets/prasadamreloader.gif';
 import Prasadam from '../components/Prasadam';
 
 export default function PrasadamPage() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
 
-    return () => clearTimeout(timeout);
-  }, []);
+  //   return () => clearTimeout(timeout);
+  // }, []);
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <section style={{height: "100vh",display: "flex", alignItems: "center", justifyContent: "center",}}>
           <img src={prasadamreloader} alt="Loading" className="loading-image" style={{ width: "300px",height:"300px",borderRadius:"50%",backgroundColor:"white"}}/>
         </section>
-      ) : (
+      ) : ( */}
         <>
        <div className="heroscreendiv w-full md:h-[900px] h-[860px] z-[997] relative flex items-center justify-center ">
           <div className="homescreenrow md:flex justify-content-center">
@@ -60,7 +60,7 @@ export default function PrasadamPage() {
     <Count/>
     <Download/>
       </>
-      )}
+      {/* )} */}
     
     </>
   );

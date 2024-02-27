@@ -27,6 +27,8 @@ import UploadData from "./pages/UploadData.jsx";
 import PopularPackageNext from "./components/PopularPackageNext.jsx";
 import Privacypolicy from "./pages/PrivacyPolicy.jsx";
 
+import loadingImage from './assets/hotelbookingreloader.gif';
+
 //neew code
 import "./App.css";
 import NotFound from "./pages/NotFound.jsx";
@@ -146,9 +148,26 @@ const routes = [
 const router = createBrowserRouter(routes);
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="App">
+       {loading ? (
+        <section style={{height: "100vh",display: "flex", alignItems: "center", justifyContent: "center",}}>
+          <img src={loadingImage} alt="Loading" className="loading-image" style={{ width: "300px",height:"300px",borderRadius:"50%",backgroundColor:"white"}}/>
+        </section>
+      ) : (
         <RouterProvider router={router} />
+      )}
     </div>
   );
 }
