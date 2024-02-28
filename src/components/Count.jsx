@@ -18,7 +18,7 @@ export default function Count() {
                         <div className="single_counter">
                             <div className="text">
                                 <h2 className="counter">120</h2>
-                                <span><i className="fas fa-hat-chef" aria-hidden="true"></i></span>
+                                <span><i className="fa-solid fa-kitchen-set"></i></span>
                             </div>
                             <p>experience chef</p>
                         </div>

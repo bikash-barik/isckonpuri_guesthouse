@@ -39,8 +39,13 @@ export default function DailyOffer() {
   <Slider {...settings}>
              <div className="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style={{ width: 570 }}>
                 <div>
-                  <div className="flex items-center justify-center" style={{ width: '100%', display: 'inline-block' }}>
+                  <div className="dailyofferdiv">
                     <div className="offer_item_single">
+                      <div className="offer_item_single_content">
+
+                      </div>
+
+                      <div className="offer_item_single_content">
                       <span>35% off</span>
                       <a className="title" href="menu_details.html">
                         Mahaprasad
@@ -66,31 +71,36 @@ export default function DailyOffer() {
                       </ul>
 
                       <div className="dailyofferbtndiv">
-                      <button className='dailyofferbtn'>Buy Now</button>
+                            <button className='dailyofferbtn'>Buy Now</button>
                       </div>
+
                       </div>
-                      
+                        </div> 
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style={{ width: 570 }}>
+              <div className="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style={{ width: 570 }}>
                 <div>
-                  <div className="col-xl-4" style={{ width: '100%', display: 'inline-block' }}>
+                  <div className="dailyofferdiv">
                     <div className="offer_item_single">
+                      <div className="offer_item_single_content">
+
+                      </div>
+
+                      <div className="offer_item_single_content">
                       <span>35% off</span>
                       <a className="title" href="menu_details.html">
-                        Prasadam
+                        Mahaprasad
                       </a>
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
-
                       <div className="dailyofferul md:flex">
                               <ul className="flex flex-wrap">
                         <li>
-                          <a href="/" data-bs-toggle="modal" data-bs-target="#cartModal">
+                          <Link to="/">
                             <i className="fas fa-shopping-basket" aria-hidden="true"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <a href="/">
@@ -98,36 +108,43 @@ export default function DailyOffer() {
                           </a>
                         </li>
                         <li>
-                          <a href="menu_details.html">
+                          <a href="/">
                             <i className="far fa-eye" aria-hidden="true"></i>
                           </a>
                         </li>
                       </ul>
 
                       <div className="dailyofferbtndiv">
-                      <button className='dailyofferbtn'>Buy Now</button>
+                            <button className='dailyofferbtn'>Buy Now</button>
                       </div>
+
                       </div>
+                        </div> 
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style={{ width: 570 }}>
+              <div className="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style={{ width: 570 }}>
                 <div>
-                  <div className="col-xl-4" style={{ width: '100%', display: 'inline-block' }}>
+                  <div className="dailyofferdiv">
                     <div className="offer_item_single">
+                      <div className="offer_item_single_content">
+
+                      </div>
+
+                      <div className="offer_item_single_content">
                       <span>35% off</span>
                       <a className="title" href="menu_details.html">
-                        Raj Bhog
+                        Mahaprasad
                       </a>
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
                       <div className="dailyofferul md:flex">
                               <ul className="flex flex-wrap">
                         <li>
-                          <a href="/" data-bs-toggle="modal" data-bs-target="#cartModal">
+                          <Link to="/">
                             <i className="fas fa-shopping-basket" aria-hidden="true"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <a href="/">
@@ -135,16 +152,18 @@ export default function DailyOffer() {
                           </a>
                         </li>
                         <li>
-                          <a href="menu_details.html">
+                          <a href="/">
                             <i className="far fa-eye" aria-hidden="true"></i>
                           </a>
                         </li>
                       </ul>
 
                       <div className="dailyofferbtndiv">
-                      <button className='dailyofferbtn'>Buy Now</button>
+                            <button className='dailyofferbtn'>Buy Now</button>
                       </div>
+
                       </div>
+                        </div> 
                     </div>
                   </div>
                 </div>
