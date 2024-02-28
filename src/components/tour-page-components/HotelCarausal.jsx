@@ -1,9 +1,10 @@
 import React from 'react'
+import guesthouseimg from '../../assets/guest-house-right.png';
 
 export default function HotelCarausal() {
   return (
     <div>
-        <img src="https://gracious-panini-f06fc2.netlify.app/static/media/hotelSlider.ae021b60.png" alt="" className='rounded' />
+        <img src={guesthouseimg} alt="guesthouseimg" className='rounded' />
     </div>
   )
 }

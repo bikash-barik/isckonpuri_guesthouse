@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { useState } from "react";
+import BookNowForm from "../BookNowForm";
 
 export default function BookingForm() {
   const [room, setRoom] = useState("");
@@ -30,7 +31,20 @@ export default function BookingForm() {
   const handleChange = (event) => {
     setRoom(event.target.value);
   };
+
+  const[model,setmodel]=useState(false);
+
+  const openModel = ()=>{
+    setmodel(true);
+  }
   return (
+    <>
+    <div className={model?"model open":"model"}>
+    <BookNowForm/>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
+          &times;
+    </button>
+    </div>
     <div className="md:w-[460px] w-full h-auto bg-white shadow-2xl rounded-lg overflow-hidden">
       <div className="h-[270px]">
         <img
@@ -49,8 +63,8 @@ export default function BookingForm() {
         </div>
       </div>
       <div className="w-full px-3 mt-2 flex items-center gap-5">
-        <p className="text-xl font-semibold capitalize">capacity-3</p>
-        <p className="text-xl font-semibold capitalize">Max children-4</p>
+        <p className="text-xl font-semibold capitalize">Adults-3</p>
+        <p className="text-xl font-semibold capitalize">Childrens-4</p>
       </div>
       <div>
         <div action="" className="w-full px-3 mt-5">
@@ -112,12 +126,13 @@ export default function BookingForm() {
             </Box>
           </div>
           <div className="w-full mb-5 mt-3">
-            <button className="w-full bg-orange-500 text-white py-3 rounded-md">
+            <button className="w-full bg-orange-500 text-white py-3 rounded-md" onClick={openModel}>
               Book now
             </button>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }

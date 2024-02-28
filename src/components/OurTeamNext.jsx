@@ -11,7 +11,7 @@ export default function OurTeamNext() {
                             <h5>weekly best seller</h5>
                             <h2>Prasadam</h2>
                             <p>Neque porro quisquam est qui dolor ipsum quia dolor sit ametsed.</p>
-                            <a href="menu_details.html">shop now <i className="far fa-long-arrow-right" aria-hidden="true"></i></a>
+                            <a href="menu_details.html">shop now <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ export default function OurTeamNext() {
                             <h5>daily offer</h5>
                             <h2>Jagannath Abhada</h2>
                             <p>Neque porro quisquam est qui dolor ipsum quia dolor sit ametsed.</p>
-                            <a href="menu_details.html">shop now <i className="far fa-long-arrow-right" aria-hidden="true"></i></a>
+                            <a href="menu_details.html">shop now <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

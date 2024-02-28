@@ -14,7 +14,7 @@ export default function CabVideo() {
             for your <span className="fw-light font-semibold">family</span>
           </h2>
 
-          <div className="footerabovecolumn1 gap-5">
+          <div className="footerabovecolumn1">
             <div className="info-card_icon justify-start w-12 ">
               <i className="fa fa-phone"></i>
             </div>

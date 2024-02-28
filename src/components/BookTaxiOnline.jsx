@@ -1,5 +1,6 @@
 import React from "react";
 import "./booktaxionline.css";
+import cabimage from '../assets/booking_car_1-1.png';
 
 export default function BookTaxiOnline() {
   return (
@@ -71,7 +72,7 @@ export default function BookTaxiOnline() {
           <img
             decoding="async"
             className="carimage"
-            src="https://themeholy.com/wordpress/taxiar/wp-content/uploads/2023/09/booking_car_1-1.png"
+            src={cabimage}
             alt="booking_car_1 1"
           />
         </div>

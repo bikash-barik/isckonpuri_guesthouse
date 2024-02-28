@@ -63,35 +63,35 @@ export default function Navbar() {
         </div>
         <ul className={` md:flex md:items-center md:mb-0 absolute md:static text-sm md:text-[16px] md:bg-transparent bg-white md:z-auto w-full left-0 md:w-auto z-[-1] pl-4 md:pl-0 transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-490px]'} px-0`}>
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/" className="hover:text-red-500">Home</Link>
+              <Link to="/" onClick={() => setOpne(false)} className="hover:text-red-500">Home</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/tour" className="hover:text-red-500">Tour</Link>
+              <Link to="/tour" onClick={() => setOpne(false)}  className="hover:text-red-500">Tour</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/room-suites" className="hover:text-red-500">Guest House</Link>
+              <Link to="/room-suites" onClick={() => setOpne(false)}  className="hover:text-red-500">Guest House</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/prasadam" className="hover:text-red-500">Prasadam</Link>
+              <Link to="/prasadam" onClick={() => setOpne(false)}  className="hover:text-red-500">Prasadam</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/cab-booking" className="hover:text-red-500">Cab Booking</Link>
+              <Link to="/cab-booking" onClick={() => setOpne(false)}  className="hover:text-red-500">Cab Booking</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/tourist-guide" className="hover:text-red-500">Tourist Guide</Link>
+              <Link to="/tourist-guide" onClick={() => setOpne(false)}  className="hover:text-red-500">Tourist Guide</Link>
             </li> 
             
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/contact-us" className="hover:text-red-500">Contact Us</Link>
+              <Link to="/contact-us" onClick={() => setOpne(false)}  className="hover:text-red-500">Contact Us</Link>
             </li>
 
           <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-          <button className="px-6 py-2 md:mt-2 mt-3 bg-orange-500 capitalize text-white rounded-md" onClick={openModel}>
+          <button className="px-6 py-2 md:mt-2 mt-3  bg-orange-500 capitalize text-white rounded-md"  onClick={() => { openModel(); setOpne(false); }}>
               Book Now
             </button>
           </li>
