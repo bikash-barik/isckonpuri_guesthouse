@@ -6,12 +6,12 @@ export default function Subscribe() {
   return (
     <section className='subsection'>
       <div className="submainrow">
-        <div className="subrow1">
+        {/* <div className="subrow1">
             <img src={clientlogo} alt="" />
             <img src={clientlogo} alt="" />
             <img src={clientlogo} alt="" />
             <img src={clientlogo} alt="" />
-        </div>
+        </div> */}
 
         <div className="subrow2">
                 <h3 className='subrow2h3 text-4xl'>Subscribe Now</h3>
