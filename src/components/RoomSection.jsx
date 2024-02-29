@@ -15,7 +15,13 @@ export default function RoomSection() {
   return (
   <>
     <div className={model?"model open":"model"}>
-    <BookNowForm/>
+    {
+      model ?
+      <BookNowForm/>
+      :
+      ""
+    }
+    
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>&times;</button>
     </div>
 

@@ -8,8 +8,6 @@
     align-items: center;
     justify-content: center;
     background-color: #000000;
-    /* backdrop-filter: blur(500px);  */
-    transition:opacity .4s ease,visibility .4s ease, transform .5s ease-in-out;
     visibility: hidden;
     opacity: 0;
     transform: scale(0);
@@ -21,6 +19,7 @@
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    transition:opacity .4s ease,visibility .4s ease, transform .5s ease-in-out;
 }
 
 .modelcloseButton{
