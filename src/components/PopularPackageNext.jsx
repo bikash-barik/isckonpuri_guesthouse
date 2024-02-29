@@ -36,7 +36,7 @@ export default function PopularPackageNext() {
         <p><i className="fa fa-clock"></i> Location : {packageData.location}</p>
         <p><i className="fa fa-clock"></i> Available Seat: {packageData.availableseats}</p>
         <p><i className="fa fa-clock"></i> Price: ₹{packageData.price}</p>
-        <button className='packagesnextbtn' onClick={openModel}>Buy Now</button>
+        <button className={`packagesnextbtn ${model ? 'bg-red-700' : 'bg-orange-500'}`} onClick={openModel}>Buy Now</button>
       </div>
 
       <div className="packagesnextquote">

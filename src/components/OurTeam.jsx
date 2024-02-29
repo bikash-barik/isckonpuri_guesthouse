@@ -83,43 +83,6 @@ export default function OurTeam() {
         </>
       ))
     }
-  
-{/* 
-                    <div className='singleteamdiv'>
-            <div className="single_team">
-                        <div className="single_team_img">
-                            <img src={chefimage} alt="team" className="img-fluid w-100"/>
-                        </div>
-                        <div className="single_team_text">
-                            <h4>arun chandra</h4>
-                            <p>senior chef</p>
-                            <ul className="flex flex-wrap">
-                                <li><a href="#"><i className="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-behance" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div className='singleteamdiv'>
-            <div className="single_team">
-                        <div className="single_team_img">
-                            <img src={chefimage} alt="team" className="img-fluid w-100"/>
-                        </div>
-                        <div className="single_team_text">
-                            <h4>arun chandra</h4>
-                            <p>senior chef</p>
-                            <ul className="flex flex-wrap">
-                                <li><a href="#"><i className="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-behance" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div> */}
 </Slider>
 }
       </div>

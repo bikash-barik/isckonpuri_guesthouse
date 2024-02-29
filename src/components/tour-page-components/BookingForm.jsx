@@ -64,7 +64,7 @@ export default function BookingForm() {
       </div>
       <div className="w-full px-3 mt-2 flex items-center gap-5">
         <p className="text-xl font-semibold capitalize">Adults-3</p>
-        <p className="text-xl font-semibold capitalize">Childrens-4</p>
+        <p className="text-xl font-semibold capitalize">Child-4</p>
       </div>
       <div>
         <div action="" className="w-full px-3 mt-5">
@@ -126,7 +126,7 @@ export default function BookingForm() {
             </Box>
           </div>
           <div className="w-full mb-5 mt-3">
-            <button className="w-full bg-orange-500 text-white py-3 rounded-md" onClick={openModel}>
+            <button className={`w-full ${model ? "bg-red-700" : "bg-orange-500" } text-white py-3 rounded-md`} onClick={openModel}>
               Book now
             </button>
           </div>

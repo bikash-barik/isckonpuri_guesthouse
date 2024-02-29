@@ -91,7 +91,7 @@ export default function Navbar() {
             </li>
 
           <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-          <button className="px-6 py-2 md:mt-2 mt-3  bg-orange-500 capitalize text-white rounded-md"  onClick={() => { openModel(); setOpne(false); }}>
+          <button className={`px-6 py-2 md:mt-2 mt-3 ${model ? 'bg-red-700' :'bg-orange-500'} capitalize text-white rounded-md`}  onClick={() => { openModel(); setOpne(false); }}>
               Book Now
             </button>
           </li>
@@ -102,7 +102,7 @@ export default function Navbar() {
                 <span>05</span></a>
             </li>
            <li>
-              <a href="/login"><i className="fas fa-user" aria-hidden="true"></i></a>
+              <a className="cart_icon" href="/login"><i className="fas fa-user" aria-hidden="true"></i></a>
            </li>
         </ul>
         

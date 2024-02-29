@@ -6,6 +6,7 @@ import "firebase/compat/firestore";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+import BookNowForm from "./BookNowForm";
 
 export default function AdventureIdeas() {
     const [HeritageData, setHeritageData] = useState([]);
@@ -42,8 +43,22 @@ export default function AdventureIdeas() {
         ],
       };
 
+      
+  const[model,setmodel]=useState(false);
+
+  const openModel = ()=>{
+    setmodel(true);
+  }
+
   return (
-    <section className='adideassection'>
+    <>
+    <div className={model?"model open":"model"}>
+    <BookNowForm/>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
+          &times;
+    </button>
+    </div>
+     <section className='adideassection'>
         <div className="adidearow">
             <h3 className='adideah3 text-3xl text-center'>Take Yourself</h3>
             <h1 className='adideah1 text-5xl text-center font-bold'>Explore the Dham's rich heritage</h1>
@@ -66,60 +81,16 @@ export default function AdventureIdeas() {
                 </div>
 
                 <div className="adideabtndiv">
-                    <button>Book Now</button>
+                    <button onClick={openModel}>Book Now</button>
                 </div>
             </div>
             </>
             ))}
         </Slider>   
         }
-        </div>
-       
-           
-            {/* <div className="adideacolumn1">
-                 <div className="adiimagediv">
-                    <img src={homeadventureidea} alt="" />
-                </div>
-
-                <div className="adideaparadiv">
-                    <h3>Zip Lines</h3>
-                    <p>Add some adrenalin to your travel senses by zipline travel.</p>
-                </div>
-
-                <div className="adideabtndiv">
-                    <button>Enquire</button>
-                </div>
-            </div>
-            <div className="adideacolumn1">
-                 <div className="adiimagediv">
-                    <img src={homeadventureidea} alt="" />
-                </div>
-
-                <div className="adideaparadiv">
-                    <h3>Zip Lines</h3>
-                    <p>Add some adrenalin to your travel senses by zipline travel.</p>
-                </div>
-
-                <div className="adideabtndiv">
-                    <button>Enquire</button>
-                </div>
-            </div>
-            <div className="adideacolumn1">
-                <div className="adiimagediv">
-                    <img src={homeadventureidea} alt="" />
-                </div>
-
-                <div className="adideaparadiv">
-                    <h3>Zip Lines</h3>
-                    <p>Add some adrenalin to your travel senses by zipline travel.</p>
-                </div>
-
-                <div className="adideabtndiv">
-                    <button>Enquire</button>
-                </div>
-            </div> */}
-     
-        
+        </div>    
     </section>
+    </>
+   
   )
 }

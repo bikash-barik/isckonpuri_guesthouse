@@ -1,9 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
 import "./booktaxionline.css";
 import cabimage from '../assets/booking_car_1-1.png';
+import BookNowForm from "./BookNowForm";
 
 export default function BookTaxiOnline() {
+       
+  const[model,setmodel]=useState(false);
+
+  const openModel = ()=>{
+    setmodel(true);
+  }
+
   return (
+    <>
+    <div className={model?"model open":"model"}>
+    <BookNowForm/>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
+          &times;
+    </button>
+    </div>
+
     <section className="booktaxionlinesection py-10">
       <div className="booktaxirow">
         <div className="booktaxicolumn1">
@@ -60,7 +76,7 @@ export default function BookTaxiOnline() {
 
               <div className="cabinputdiv">
               <input className="cabinput mx-4" type="text" name="" id="" placeholder="Select Time"/>
-                <button className="cabbutton w-1/2 mr-4">
+                <button className="cabbutton w-1/2 mr-4" onClick={openModel}>
                   BOOK TAXI NOW
                 </button>
               </div>
@@ -78,5 +94,7 @@ export default function BookTaxiOnline() {
         </div>
       </div>
     </section>
+    </>
+    
   );
 }

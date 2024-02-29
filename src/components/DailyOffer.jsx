@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './dailyoffer.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
+import BookNowForm from "./BookNowForm";
+
 export default function DailyOffer() {
 
   const settings = {
@@ -25,7 +27,22 @@ export default function DailyOffer() {
     ],
   };
 
+  const[model,setmodel]=useState(false);
+
+  const openModel = ()=>{
+    setmodel(true);
+  }
+
+
   return (
+    <>
+      <div className={model?"model open":"model"}>
+    <BookNowForm/>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
+          &times;
+    </button>
+    </div>
+
     <section className="offer_item pt_95 pb_100 xs_pt_65 xs_pb_70">
       <div className="container">
         <div className="row wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
@@ -37,22 +54,24 @@ export default function DailyOffer() {
           </div>
         </div>
   <Slider {...settings}>
-             <div className="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style={{ width: 570 }}>
+  <div className="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style={{ width: 570 }}>
                 <div>
                   <div className="dailyofferdiv">
                     <div className="offer_item_single">
                       <div className="offer_item_single_content">
-
+                      <span>35% off</span>
                       </div>
 
                       <div className="offer_item_single_content">
-                      <span>35% off</span>
+                      
                       <a className="title" href="menu_details.html">
                         Mahaprasad
                       </a>
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
-                      <div className="dailyofferul md:flex">
-                              <ul className="flex flex-wrap">
+                      <div className="dailyofferul">
+
+                      <div className='dailyofferuldiv'>
+                        <ul className="flex">
                         <li>
                           <Link to="/">
                             <i className="fas fa-shopping-basket" aria-hidden="true"></i>
@@ -69,12 +88,13 @@ export default function DailyOffer() {
                           </a>
                         </li>
                       </ul>
-
-                      <div className="dailyofferbtndiv">
-                            <button className='dailyofferbtn'>Buy Now</button>
+                        </div>
+                        <div className="dailyofferbtndiv">
+                            <button className='dailyofferbtn'onClick={openModel}>Buy Now</button>
                       </div>
 
                       </div>
+                      
                         </div> 
                     </div>
                   </div>
@@ -86,17 +106,19 @@ export default function DailyOffer() {
                   <div className="dailyofferdiv">
                     <div className="offer_item_single">
                       <div className="offer_item_single_content">
-
+                      <span>35% off</span>
                       </div>
 
                       <div className="offer_item_single_content">
-                      <span>35% off</span>
+                      
                       <a className="title" href="menu_details.html">
                         Mahaprasad
                       </a>
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
-                      <div className="dailyofferul md:flex">
-                              <ul className="flex flex-wrap">
+                      <div className="dailyofferul">
+
+                      <div className='dailyofferuldiv'>
+                        <ul className="flex">
                         <li>
                           <Link to="/">
                             <i className="fas fa-shopping-basket" aria-hidden="true"></i>
@@ -113,12 +135,13 @@ export default function DailyOffer() {
                           </a>
                         </li>
                       </ul>
-
-                      <div className="dailyofferbtndiv">
-                            <button className='dailyofferbtn'>Buy Now</button>
+                        </div>
+                        <div className="dailyofferbtndiv">
+                            <button className='dailyofferbtn'onClick={openModel}>Buy Now</button>
                       </div>
 
                       </div>
+                      
                         </div> 
                     </div>
                   </div>
@@ -130,17 +153,19 @@ export default function DailyOffer() {
                   <div className="dailyofferdiv">
                     <div className="offer_item_single">
                       <div className="offer_item_single_content">
-
+                      <span>35% off</span>
                       </div>
 
                       <div className="offer_item_single_content">
-                      <span>35% off</span>
+                      
                       <a className="title" href="menu_details.html">
                         Mahaprasad
                       </a>
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
-                      <div className="dailyofferul md:flex">
-                              <ul className="flex flex-wrap">
+                      <div className="dailyofferul">
+
+                      <div className='dailyofferuldiv'>
+                        <ul className="flex">
                         <li>
                           <Link to="/">
                             <i className="fas fa-shopping-basket" aria-hidden="true"></i>
@@ -157,12 +182,13 @@ export default function DailyOffer() {
                           </a>
                         </li>
                       </ul>
-
-                      <div className="dailyofferbtndiv">
-                            <button className='dailyofferbtn'>Buy Now</button>
+                        </div>
+                        <div className="dailyofferbtndiv">
+                            <button className='dailyofferbtn'onClick={openModel}>Buy Now</button>
                       </div>
 
                       </div>
+                      
                         </div> 
                     </div>
                   </div>
@@ -172,5 +198,7 @@ export default function DailyOffer() {
 
       </div>
     </section>
+    </>
+    
   );
 }

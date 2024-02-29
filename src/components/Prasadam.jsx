@@ -73,7 +73,7 @@ export default function Prasadam() {
                 <div className="single_team_text">
                   <h4>{item.prasadname}</h4>
                   <p>₹ {item.prasadprice}</p>
-                  <button className="px-6 py-2 md:mt-2 mt-3 bg-orange-500 capitalize text-white rounded-md" onClick={openModel}>
+                  <button className={`px-6 py-2 md:mt-2 mt-3 bg-orange-500 capitalize text-white rounded-md`} onClick={openModel}>
                     Buy Now
                   </button>
                 </div>

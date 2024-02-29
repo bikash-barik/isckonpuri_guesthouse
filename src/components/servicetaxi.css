@@ -19,7 +19,7 @@
 }
 
 .servicetaxisliderdiv{
-    width: 80%;
+    width: 85%;
 }
 
 .taxi-grid_img img {
@@ -32,6 +32,11 @@
     background-color: #1B1B1B;
     color: white;
     padding: 0 40px 40px 40px;
+}
+
+.taxi-grid_title,.taxi-grid_subtitle{
+    height: 24px;
+    overflow: hidden;
 }
 
 .taxi-grid_info{
@@ -62,7 +67,7 @@
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
-    background-color: #ff7c08;
+    /* background-color: #ff7c08; */
     color: white;
     font-size: 14px;
     font-weight: 600;

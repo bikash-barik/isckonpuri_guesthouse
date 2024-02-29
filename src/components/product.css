@@ -150,14 +150,14 @@
 }
 
 .button-2 {
-  background-color: #ff7c08;
+  /* background-color: #ff7c08; */
   display: none;
 }
 
 @media (min-width: 768px) {
   .button-2 {
     display: block;
-    background-color: #ff7c08;
+    /* background-color: #ff7c08; */
     /* hover: #9b2c2c; */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;

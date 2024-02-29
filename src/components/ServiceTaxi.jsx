@@ -44,16 +44,19 @@ export default function ServiceTaxi() {
   }, []);
 
   const[model,setmodel]=useState(false);
+  const [activeButton, setActiveButton] = useState(null);
 
-  const openModel = ()=>{
+  const openModel = (buttonIndex)=>{
     setmodel(true);
+    setActiveButton(buttonIndex);
   }
+
 
   return (
     <>
       <div className={model?"model open":"model"}>
     <BookNowForm/>
-    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false);setActiveButton(null)}}>
           &times;
     </button>
     </div>
@@ -69,7 +72,7 @@ export default function ServiceTaxi() {
           {
             ServiceTaxiData.map((item,index)=>(
               <>
-              <div key={index} className="col-md-6 col-lg-4 md:px-8">
+              <div key={index} className="col-md-6 col-lg-4 md:px-4 ">
               <div className="taxi-grid">
                 <div className="taxi-grid_img flex align-middle justify-center">
                   <img 
@@ -103,8 +106,8 @@ export default function ServiceTaxi() {
                     <br />
                     <span className="text-white">₹{item.taxiperstopcharge}</span>
                   </p> */}
-                  <button onClick={openModel}
-                    className="th-btn"
+                  <button key={index} onClick={() => openModel(index)}
+                        className={`th-btn ${activeButton === index ? 'bg-red-700' : 'bg-orange-500'}`}
                   >
                     Book Cab
                   </button>

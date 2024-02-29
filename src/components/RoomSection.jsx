@@ -15,13 +15,7 @@ export default function RoomSection() {
   return (
   <>
     <div className={model?"model open":"model"}>
-    {
-      model ?
       <BookNowForm/>
-      :
-      ""
-    }
-    
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>&times;</button>
     </div>
 
@@ -50,7 +44,7 @@ export default function RoomSection() {
               typesetting industry.
             </p>
 
-            <button className="px-6 py-2 md:mt-2 mt-3 bg-orange-500 capitalize text-white rounded-md" onClick={openModel}>
+            <button className={`px-6 py-2 md:mt-2 mt-3 ${model ? 'bg-red-700' :'bg-orange-500'} capitalize text-white rounded-md`} onClick={openModel}>
               Book Now
             </button>
           </div>

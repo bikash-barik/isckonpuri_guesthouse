@@ -7,7 +7,7 @@ import { ExploreSectioncard } from "./ExploreSectionCard";
 
 export default function ExploreSection() {
   return (
-    <div className="w-full md:h-[500px] border m h-auto py-8">
+    <div className="w-full md:h-[500px] border h-auto py-8">
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
         {ExploreSectionHeading}
       </h1>

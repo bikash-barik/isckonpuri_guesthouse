@@ -44,7 +44,7 @@
     margin: 25px 0px 0px 0px;
     width: 90%;
     display: flex;
-    position: relative;
+    /* position: relative; */
 }
 
 .offer_item_single_content{
@@ -54,7 +54,7 @@
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
-    position: absolute;
+    position: relative;
     top: 35px;
     left: 115px;
     width: 60px;
@@ -97,14 +97,33 @@
     overflow: hidden;
 }
 
+
+
+.dailyofferul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    /* gap: 15px; */
+    justify-content: space-between;
+}
+
+.dailyofferuldiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
 .offer_item_single ul {
     display: flex;
     line-height: 30px;
 }
 
-.dailyofferul{
+.dailyofferbtndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 15px;
-    justify-content: space-between;
 }
 
 .offer_item_single ul li a {
@@ -157,6 +176,10 @@
     .offer_item_single span{
         left: 80px;
         top: 40px;
+    }
+
+    .dailyofferul{
+        flex-direction: column;
     }
 
     .dailyofferbtndiv{

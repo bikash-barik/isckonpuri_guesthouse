@@ -34,7 +34,8 @@ export default function Footer() {
         </ul>
       </section>
 
-      <section className="w-full  md:px-32 ">
+      <section className="w-full flex flex-col md:justify-center md:items-center">
+        <div>
         <h1 className="text-white text-4xl md:text-2xl font-semibold mb-4">
           Quick Links
         </h1>
@@ -45,13 +46,16 @@ export default function Footer() {
             </li>
           ))}
         </ul>
+        </div>
+        
       </section>
 
-      <section className="w-full md:px-10 space-y-7">
+      <section className="w-full flex flex-col justify-center items-center space-y-7">
+        <div>
         <h1 className="text-white text-4xl md:text-2xl font-semibold mb-4">
           Contact Details
         </h1>
-        <div className="items-center gap-5">
+        <div className="items-center gap-5 my-4">
             <div className="mb-2">
               <h3 className="text-white text-xl font-semibold">PHONE NUMBER</h3>
             </div>
@@ -61,7 +65,7 @@ export default function Footer() {
             </div>
         </div>
 
-        <div className="items-center gap-5">
+        <div className="items-center gap-5 my-4">
           <div className="mb-2">
               <h3 className="text-white text-xl font-semibold">Email</h3>
             </div>
@@ -71,15 +75,17 @@ export default function Footer() {
             </div>
         </div>
 
-        <div className="items-center gap-5">
+        <div className="items-center gap-5 my-4">
           <div className="mb-2">
               <h3 className="text-white text-xl font-semibold">ADDRESS</h3>
             </div>
             <div className="flex">
-               <FaLocationDot className="text-orange-500 text-3xl py-1  border  bg-white mr-2" />
+               <FaLocationDot className="text-orange-500 text-3xl px-1  border  bg-white mr-2" />
                <p className="text-white text-lg font-semibold">{address}</p>
             </div>
         </div>
+        </div>
+        
 
         {/* <div className="w-full flex relative md:gap-0 gap-4">
           <input
