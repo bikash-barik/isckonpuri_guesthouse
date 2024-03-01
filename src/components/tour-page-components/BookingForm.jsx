@@ -96,7 +96,7 @@ export default function BookingForm() {
               </div>
             </div>           
             <div className="flex w-full items-center border border-gray-400 rounded-md p-3 justify-between px-2">
-              <p>adult</p>
+              <p>child</p>
               <div className="flex items-center gap-3 text-xl">
                    <button onClick={()=>handleIncrement("child")} className="text-xl text-orange-500">+</button>
                    <p>{child}</p>
