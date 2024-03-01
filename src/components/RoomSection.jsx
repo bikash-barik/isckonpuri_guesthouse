@@ -4,7 +4,7 @@ import Room from "../assets/Room.png";
 import { RoomfeaturesSection } from "./RoomfeaturesSection";
 import BookNowForm from "./BookNowForm";
 import '../components/roomsection.css';
-
+import { IoMdClose } from "react-icons/io";
 export default function RoomSection() {
 
   const[model,setmodel]=useState(false);
@@ -16,7 +16,7 @@ export default function RoomSection() {
   <>
     <div className={model?"model open":"model"}>
       <BookNowForm/>
-    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>&times;</button>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}><IoMdClose/></button>
     </div>
 
     <div className="w-full md:px-10 md:mt-12 h-auto md:mb-8  relative">

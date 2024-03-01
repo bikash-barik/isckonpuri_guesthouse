@@ -13,23 +13,28 @@
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
+    overflow: scroll;
+    /* overflow-x: hidden; */
 }
 
 .model.open{
+    height: 100%;
     visibility: visible;
     opacity: 1;
     transform: scale(1);
     transition:opacity .4s ease,visibility .4s ease, transform .5s ease-in-out;
+    overflow: scroll;
+
 }
 
 .modelcloseButton{
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 2rem;
-    height: 2rem;
+    /* width: 2rem; */
+    /* height: 2rem; */
     padding: 5px;
-    font-size: 40px;
+    font-size: 35px;
     background-color: black;
     color: white;
     cursor: pointer;
@@ -38,10 +43,14 @@
 
 @media screen and (max-width:600px) {
     .modelcloseButton{
+        position: absolute;
         right: 37px;
-        top: 30px;
-        /* font-size: 50px; */
+        top: 50px;
         background-color: #eee;
         color: black;
+    }
+
+    .model.open{
+        height: 100vh;
     }
 }
