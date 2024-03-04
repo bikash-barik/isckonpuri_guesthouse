@@ -39,6 +39,7 @@
   font-weight: 700;
   text-transform: capitalize;
   color: var(--colorWhite);
+  margin-bottom: 20px;
 }
 
 .banner_text h3 {
@@ -48,6 +49,7 @@
   font-weight: 600;
   margin-top: 10px;
   font-family: var(--cursiveFont);
+  
 }
 
 .banner_text p {
@@ -61,6 +63,7 @@
   padding: 10px;
   border-radius: 80px;
   position: relative;
+  color: black;
 }
 
 .banner_text form input {

@@ -1,5 +1,5 @@
 import React from 'react'
-import sliderimage from '../assets/Lord.jpg' ;
+import sliderimage from '../assets/prasadapageheroimg.avif' ;
 import "../components/homepageherosection.css";
 
 export default function HomePageHeroSection() {
@@ -8,9 +8,9 @@ export default function HomePageHeroSection() {
     <div className="homescreenrow md:flex justify-content-center">
       <div className="homescreencolumn">
         <div className="banner_text wow fadeInLeft" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInLeft' }}>
-          <h3>Sacred Serenity</h3>
-          <h1>Welcome to ISKCON PURI Guest House</h1>
-          <p>Experience Divine Comfort at ISKCON Puri Guesthouse – Where Tranquility Meets Hospitality!</p>
+          <h3>Sacred Krishna Flavours.</h3>
+          <h1>Krishna's mercy-filled prasad delights.</h1>
+          {/* <p>Experience Divine Comfort at ISKCON Puri Guesthouse – Where Tranquility Meets Hospitality!</p> */}
           <form>
             <input type="text" placeholder="Search . . ." />
             <button type="submit" className="commonbtn">search</button>
