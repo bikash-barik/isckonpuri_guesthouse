@@ -170,6 +170,6 @@ export const FooterLiks = [
 
 
 
-export const phoneNumber = "+91 - 8249505348";
+export const phoneNumber = "+91 - 8114735348";
 export const email = "info@iskconpuri.com"
 export const address = "Bhaktivedanta Ashram Sipasirubuli, Puri, Odisha, 752001"
