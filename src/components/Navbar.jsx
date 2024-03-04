@@ -64,31 +64,31 @@ export default function Navbar() {
         </div>
         <ul className={` md:flex md:items-center md:mb-0 absolute md:static text-sm md:text-[16px] md:bg-transparent bg-white md:z-auto w-full left-0 md:w-auto z-[-1] pl-4 md:pl-0 transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-490px]'} px-0`}>
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/" onClick={() => setOpne(false)} className="hover:text-red-500">Home</Link>
+              <a href="/" onClick={() => setOpne(false)} className="hover:text-red-500">Home</a>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/prasadam" onClick={() => setOpne(false)}  className="hover:text-red-500">Prasadam</Link>
+              <a href="/prasadam" onClick={() => setOpne(false)}  className="hover:text-red-500">Prasadam</a>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/tour" onClick={() => setOpne(false)}  className="hover:text-red-500">Tour</Link>
+              <a href="/tour" onClick={() => setOpne(false)}  className="hover:text-red-500">Tour</a>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/room-suites" onClick={() => setOpne(false)}  className="hover:text-red-500">Guest House</Link>
+              <a href="/room-suites" onClick={() => setOpne(false)}  className="hover:text-red-500">Guest House</a>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/cab-booking" onClick={() => setOpne(false)}  className="hover:text-red-500">Cab Booking</Link>
+              <a href="/cab-booking" onClick={() => setOpne(false)}  className="hover:text-red-500">Cab Booking</a>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/tourist-guide" onClick={() => setOpne(false)}  className="hover:text-red-500">Tourist Guide</Link>
+              <a href="/tourist-guide" onClick={() => setOpne(false)}  className="hover:text-red-500">Tourist Guide</a>
             </li> 
             
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/contact-us" onClick={() => setOpne(false)}  className="hover:text-red-500">Contact Us</Link>
+              <a href="/contact-us" onClick={() => setOpne(false)}  className="hover:text-red-500">Contact Us</a>
             </li>
 
           <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
