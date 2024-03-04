@@ -9,6 +9,7 @@ import BookNowForm from "./BookNowForm";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpne] = useState(false);
+  
   const handleNavbarBackgroud = () => {
     if (window.scrollY >= 50) {
       setNavbar(true);
@@ -67,15 +68,15 @@ export default function Navbar() {
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
+              <Link to="/prasadam" onClick={() => setOpne(false)}  className="hover:text-red-500">Prasadam</Link>
+            </li>
+
+            <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
               <Link to="/tour" onClick={() => setOpne(false)}  className="hover:text-red-500">Tour</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
               <Link to="/room-suites" onClick={() => setOpne(false)}  className="hover:text-red-500">Guest House</Link>
-            </li>
-
-            <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
-              <Link to="/prasadam" onClick={() => setOpne(false)}  className="hover:text-red-500">Prasadam</Link>
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >

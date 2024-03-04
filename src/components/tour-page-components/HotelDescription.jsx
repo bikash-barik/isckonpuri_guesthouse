@@ -71,8 +71,8 @@ const data = [
 
 const HotelDescription = () => {
   return (
-    <div className="md:mt-[570px] mt-[930px] w-full mb-10 md:px-44">
-      <div className="md:mt-[570px] mt-[930px] w-full mb-10">
+    <div className="w-full mt-10 mb-10 md:px-44">
+      <div className=" w-full mb-10">
         <Heading SectionHeading="Hotel Amenities" />
       </div>
       <div className="flex md:mt-12 items-center md:gap-40 w-full overflow-x-scroll scrollbar-hide ">

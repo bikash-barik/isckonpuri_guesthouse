@@ -13,6 +13,7 @@ import HotelDescriptionAndPrice from "../components/tour-page-components/HotelDe
 // import RoomsCarausalSection from "../components/RoomsCarausalSection";
 import HotelFacilities from "../components/tour-page-components/HotelFacilities";
 import HotelPageHeroSection from '../components/HotelPageHeroSection';
+import Herosection from '../components/Herosection';
 const RoomsSuite = () => {
   // const [loading, setLoading] = useState(true);
 
@@ -33,7 +34,8 @@ const RoomsSuite = () => {
       ) : ( */}
         <>
        {/* <Herosection /> */}
-       <HotelPageHeroSection />
+       {/* <HotelPageHeroSection /> */}
+       <Herosection/>
       <HotelDescription />
       <div className="px-4 md:px-24">
         <HotelDescriptionAndPrice />

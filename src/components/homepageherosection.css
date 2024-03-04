@@ -1,5 +1,5 @@
-.prasadamscreendiv{
-    background-image: url(../assets/banner_bg.jpg);
+.heroscreendiv{
+    background-image: url(../assets/pexels-manas-patra-14862819.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
 }
-.prasadamscreendiv::after{
+.heroscreendiv::after{
   position: absolute;
   content: '';
   left: 0;
@@ -18,17 +18,17 @@
   top: 0;
   bottom: 0;
   background-color: var(--colorBlack);
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
 }
 
-.prasadamscreenrow{
+.homescreenrow{
   display: flex;
   width: 85%;
   justify-content: space-between;
 }
 
-.prasadamscreencolumn{
+.homescreencolumn{
   width: 100%;
   height: 100%;
   padding: 0px 20px;
@@ -87,9 +87,11 @@ form .commonbtn {
 
 .img-fluid{
   border-radius: 50%;
+  height: 500px;
+  width: 500px;
 } 
 
-.prasadamscreenimagediv{
+.homescreenimagediv{
     position: absolute;
     border-radius: 50%;
     padding: 19px;
@@ -99,7 +101,7 @@ form .commonbtn {
     bottom: 200px;
 }
 
-.prasadamscreenimagediv::after{
+.homescreenimagediv::after{
     position: absolute;
     content: "";
     background: url(../assets/banner_img_shapes.png);
@@ -140,11 +142,11 @@ form .commonbtn {
 }
 
 @media screen and (max-width:600px) {
-  .prasadamscreendiv{
+  .heroscreendiv{
     padding-top: 80px;
   }
 
-  .prasadamscreenimagediv{
+  .homescreenimagediv{
     display: none;
   }
 }

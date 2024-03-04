@@ -15,6 +15,9 @@ import PopularPackages from "../components/PopularPackagesHome";
 // import DailyOffer from "../components/DailyOffer";
 import ServiceTaxi from "../components/ServiceTaxi";
 import OurTeam from "../components/PrasadamHome";
+import DailyOffer from "../components/DailyOffer";
+import PrasadamHeroSection from "../components/PrasadamHeroSection";
+import HomePageHeroSection from "../components/HomePageHeroSection";
 
 export default function HomePage() {
   // const [loading, setLoading] = useState(true);
@@ -34,16 +37,19 @@ export default function HomePage() {
         </section>
       ) : ( */}
         <>
-      <Herosection />
+      {/* <Herosection /> */}
+      {/* <PrasadamHeroSection/> */}
+      <HomePageHeroSection/>
+      <OurTeam/>
       <ExploreSection />
       <ImageContentSection />
       <HomeCarausalOne />
       <RoomSection />
       {/* <SocialMediaSection /> */}
+      <DailyOffer/>
       <PopularPackages/>
       <RoomsCarausalSection />
       {/* <DailyOffer/> */}
-      <OurTeam/>
       <ServiceTaxi/>
       {/* <EventSection /> */}
       <NewsLetterSection />
