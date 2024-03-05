@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css"
 import './exploreactivity.css';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+import BookNowForm from "./BookNowForm";
 
 export default function ExploreActivities() {
     const [ActivityData, setActivityData] = useState([]);
@@ -42,8 +43,21 @@ export default function ExploreActivities() {
         return () => unsubscribe();
       }, []);
 
+      const[model,setmodel]=useState(false);
+
+  const openModel = ()=>{
+    setmodel(true);
+  }
+
   return (
-    <section className='easection'>
+    <>
+    <div className={model?"model open":"model"}>
+    <BookNowForm/>
+    <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
+          &times;
+    </button>
+    </div>
+        <section className='easection'>
         <div className="adidearow">
             <h3 className='adideah3 text-3xl text-center'>Select your activity</h3>
             <h1 className='adideah1 text-5xl text-center font-bold'>Explore Activity</h1>
@@ -64,6 +78,9 @@ export default function ExploreActivities() {
                         <h3 className='activityname'>{item.activityname}</h3>
                         <p>Starts from ₹{item.startingprice}</p>
                     </div>
+                    <div className="explorebtndiv">
+                    <button onClick={openModel}>Book Now</button>
+                    </div>
                     </div>
                    
                     </div>
@@ -73,35 +90,10 @@ export default function ExploreActivities() {
             } 
            </Slider>
           }  
-        
-        {/* <div className="explorediv px-6">
-                <div className="exploreinnerdiv border">
-                <div className="exploreimgdiv">
-                    <img src={activityimg} alt="" />
-                </div>
-                <div className="exploreparadiv mt-4">
-                    <h3>Mountain Stream Climbing</h3>
-                    <p>Starts from ₹189.00</p>
-                </div>
-                </div>
-               
-            </div>
 
-            <div className="explorediv px-6">
-                <div className="exploreinnerdiv border">
-                <div className="exploreimgdiv">
-                    <img src={activityimg} alt="" />
-                </div>
-                <div className="exploreparadiv mt-4">
-                    <h3>Mountain Stream Climbing</h3>
-                    <p>Starts from ₹189.00</p>
-                </div>
-                </div>
-               
-            </div> */}
         </div>
-
-
     </section>
+    </>
+
   )
 }

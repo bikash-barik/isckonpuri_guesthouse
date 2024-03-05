@@ -31,6 +31,20 @@ font-weight: 700;
     width: 100%;
 }
 
+.explorebtndiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.explorebtndiv > button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
 @media screen and (max-width:600px) {
     
 }

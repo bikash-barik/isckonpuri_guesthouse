@@ -52,6 +52,9 @@ export default function PopularPackagesHome() {
                         <i className="fa fa-clock"></i> {item.startdate} -{" "}
                         {item.enddate}
                       </p>
+                      <div className="packagesbtndiv">
+                      <button onClick={() => handlePackageClick(item)}>Read More</button>
+                      </div>
                     </div>
                   </div>
                 </div>

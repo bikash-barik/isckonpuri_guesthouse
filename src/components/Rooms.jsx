@@ -8,7 +8,8 @@ import "./product.css";
 // import roomData from "../Data/room";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import BookNowForm from "./BookNowForm";
+// import BookNowForm from "./BookNowForm";
+import GuestHouseBookingForm from "./GuestHouseBookingForm";
 
 const Rooms = ({roomdata}) => {
   const [room, setRoom] = useState(null);
@@ -77,7 +78,8 @@ const Rooms = ({roomdata}) => {
   return (
     <>
     <div className={model?"model open":"model"}>
-    <BookNowForm/>
+    {/* <BookNowForm/> */}
+    <GuestHouseBookingForm/>
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
           &times;
     </button>

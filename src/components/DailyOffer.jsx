@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
-import BookNowForm from "./BookNowForm";
+import PrasadhBookingForm from './PrasadhBookingForm';
 
 export default function DailyOffer() {
 
@@ -37,7 +37,7 @@ export default function DailyOffer() {
   return (
     <>
       <div className={model?"model open":"model"}>
-    <BookNowForm/>
+    <PrasadhBookingForm/>
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
           &times;
     </button>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./ourteam.css";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import BookNowForm from "./BookNowForm";
+import PrasadhBookingForm from "./PrasadhBookingForm";
 
 export default function Prasadam() {
   const [PrasadamData, setPrasadamData] = useState([]);
@@ -32,7 +32,7 @@ export default function Prasadam() {
   return (
     <>
     <div className={model?"model open":"model"}>
-    <BookNowForm/>
+    <PrasadhBookingForm/>
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
           &times;
     </button>

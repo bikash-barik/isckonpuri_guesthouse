@@ -7,7 +7,8 @@ import 'slick-carousel/slick/slick-theme.css';
 // import chefimage from '../assets/chef_3.jpg';
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import BookNowForm from "./BookNowForm";
+// import BookNowForm from "./BookNowForm";
+import PrasadhBookingForm from './PrasadhBookingForm';
 
 export default function PrasadamHome() {
   const [PrasadamHomeData, setPrasadamHomeData] = useState([]);
@@ -54,7 +55,7 @@ export default function PrasadamHome() {
   return (
     <>
     <div className={model?"model open":"model"}>
-    <BookNowForm/>
+    <PrasadhBookingForm/>
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
           &times;
     </button>

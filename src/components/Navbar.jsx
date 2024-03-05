@@ -5,6 +5,9 @@ import { IoMdMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 import "./navbar.css";
 import BookNowForm from "./BookNowForm";
+import GuestHouseBookingForm from "./GuestHouseBookingForm";
+import PrasadhBookingForm from "./PrasadhBookingForm";
+// import GuestHouseBookingForm from "./GuestHouseBookingForm";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -29,6 +32,8 @@ export default function Navbar() {
     <>
     <div className={model?"model open":"model"}>
     <BookNowForm/>
+    {/* <PrasadhBookingForm/> */}
+    {/* <GuestHouseBookingForm/> */}
     <button className='modelcloseButton' onClick={()=>{setmodel(false)}}>
           &times;
     </button>

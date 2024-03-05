@@ -1,0 +1,17 @@
+.bookingforminputdiv{
+    width: 100%;
+}
+
+.bookingformlabel{
+    color: white;
+}
+
+.bookingforminput{
+    width: 100%;
+    padding: 10px;
+}
+
+.bookingformcheckbox{
+    margin-right: 10px;
+}
+  

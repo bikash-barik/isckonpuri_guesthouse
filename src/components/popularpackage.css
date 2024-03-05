@@ -69,6 +69,25 @@
     width: 100% !important;
 }
 
+.packagesbtndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.packagesbtndiv > button{
+    width: 50%;
+    background-color: #ff7c08;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.packagesbtndiv > button:hover{
+    background-color: black;
+}
+
 @media screen and (max-width:600px) {
     .packagescolumntour {
         grid-column: 1 / span 3;
