@@ -22,7 +22,7 @@ export default function FooterAbove() {
             </div>
             <div className="info-card_content">
               <p className="info-card_text">Mobile Number</p>
-              <p>+91- 82495 05348</p>
+              <p>+91- 8114 735 348</p>
             </div>
         </div>
         <div className="footerabovecolumn3 gap-5">
@@ -32,7 +32,7 @@ export default function FooterAbove() {
             </div>
             <div className="info-card_content">
               <p className="info-card_text">Mobile Number</p>
-              <p>+91- 7978699120</p>
+              <p>+91- 7978 699 120</p>
             </div>
         </div>
       </div>
