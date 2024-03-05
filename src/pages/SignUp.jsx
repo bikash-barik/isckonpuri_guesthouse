@@ -29,7 +29,7 @@ export default function SignUp () {
     }
   };
   return (
-   <section className='signupsection mt-28'>
+   <section className='signupsection md:mt-28 md:pt-0 pt-24'>
       <div className="signupdiv">
         <h1 className='signupheading'>Register</h1>
         <input className='signupinput' type="email"  placeholder='Enter Email...' name='email' value={email} onChange={(e) => setEmail(e.target.value)}/>

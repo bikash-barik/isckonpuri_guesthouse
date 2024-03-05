@@ -46,3 +46,9 @@
     margin-bottom: 20px;
     color: #3457D5;
 }
+
+@media screen and (max-width:600px) {
+    .signupdiv{
+        width: 90%;
+    }
+}

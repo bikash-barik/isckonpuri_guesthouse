@@ -62,7 +62,7 @@ export default function Navbar() {
         <div onClick={() => setOpne(!open)} className="text-3xl md:hidden absolute text-gray-800  right-8 top-6 cursor-pointer">
           {open ? <IoIosClose /> : <IoMdMenu />}
         </div>
-        <ul className={` md:flex md:items-center md:mb-0 absolute md:static text-sm md:text-[16px] md:bg-transparent bg-white md:z-auto w-full left-0 md:w-auto z-[-1] pl-4 md:pl-0 transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-490px]'} px-0`}>
+        <ul className={` md:flex md:items-center md:mb-0 absolute md:static text-sm md:text-[16px] md:bg-transparent bg-white md:z-auto w-full left-0 md:w-auto z-[-1] pl-4 md:pl-0 transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-590px]'} px-0`}>
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
               <a href="/" onClick={() => setOpne(false)} className="hover:text-red-500">Home</a>
             </li>
