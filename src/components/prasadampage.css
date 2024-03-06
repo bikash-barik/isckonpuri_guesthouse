@@ -34,7 +34,7 @@
   padding: 0px 20px;
 }
 
-.banner_text h1 {
+.prasadamscreenh1 {
   font-size: 58px;
   font-weight: 700;
   text-transform: capitalize;
@@ -42,7 +42,7 @@
   margin-bottom: 20px;
 }
 
-.banner_text h3 {
+.prasadamscreenh3{
   color: var(--colorPrimary) !important;
   text-transform: capitalize;
   font-size: 30px;
@@ -147,7 +147,19 @@ form .commonbtn {
     padding-top: 80px;
   }
 
-  .prasadamscreenimagediv{
+  .prasadamscreencolumn{
+    padding: 0;
+  }
+  
+  .prasadamscreencolumn1,.prasadamscreenimagediv{
     display: none;
+  }
+
+  .prasadamscreenh1{
+    font-size: 40px;
+  }
+
+  .prasadamscreenh3{
+    font-size: 20px;
   }
 }

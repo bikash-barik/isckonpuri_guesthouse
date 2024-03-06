@@ -4,12 +4,12 @@ import "../components/prasadampage.css";
 
 export default function PrasadamHeroSection() {
   return (
-    <div className="prasadamscreendiv w-full md:h-[900px] h-[860px] z-[997] relative flex items-center justify-center ">
-    <div className="prasadamscreenrow md:flex justify-content-center">
+    <div className="prasadamscreendiv w-full md:h-[900px] h-[660px] z-[997] relative flex items-center justify-center ">
+    <div className="prasadamscreenrow md:flex justify-content-center w-full">
       <div className="prasadamscreencolumn">
         <div className="banner_text wow fadeInLeft" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInLeft' }}>
-          <h3>Sacred Krishna Flavours.</h3>
-          <h1>Krishna's mercy-filled prasad delights.</h1>
+          <h3 className='prasadamscreenh3'>Sacred Krishna Flavours.</h3>
+          <h1 className='prasadamscreenh1'>Krishna's mercy-filled prasad delights.</h1>
           {/* <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit minimaet debitis ut distinctio optio.</p> */}
           <form>
             <input type="text" placeholder="Search . . ." />
@@ -17,7 +17,7 @@ export default function PrasadamHeroSection() {
           </form>
         </div>
       </div>
-      <div className="prasadamscreencolumn">
+      <div className="prasadamscreencolumn prasadamscreencolumn1">
         <div className="banner_img wow fadeInRight" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInRight' }}>
           <div className="prasadamscreenimagediv">
             <img src={sliderimage} alt="fooditem" className="img-fluid w-100" />
