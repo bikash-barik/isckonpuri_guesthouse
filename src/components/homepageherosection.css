@@ -5,7 +5,6 @@
     background-position: center;
     position: relative;
     color: #fff;
-    /* padding-top: 30px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +99,7 @@ form .commonbtn {
     box-shadow: var(--boxShadow);
     z-index: 1;
     right: 100px;
-    bottom: 200px;
+    bottom: 100px;
 }
 
 .homescreenimagediv::after{
@@ -145,16 +144,36 @@ form .commonbtn {
 
 @media screen and (max-width:600px) {
   .heroscreendiv{
-    padding-top: 80px;
+    padding-top: 100px;
+    align-items: flex-start;
   }
 
   .homescreencolumn{
     padding: 0;
   }
 
-  .homescreencolumn1,.homescreenimagediv{
-    display: none;
+  .homescreenrow{
+    flex-direction: column;
   }
+
+  .homescreencolumn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homescreenimagediv{
+    padding: 10px;
+    top: 500px;
+    right: 15px;
+    bottom: 30px;
+  }
+
+  .img-fluid{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  } 
   
   .homescreenh3{
     font-size: 20px;

@@ -4,7 +4,7 @@ import "../components/prasadampage.css";
 
 export default function PrasadamHeroSection() {
   return (
-    <div className="prasadamscreendiv w-full md:h-[900px] h-[660px] z-[997] relative flex items-center justify-center ">
+    <div className="prasadamscreendiv w-full md:h-[800px] h-[850px] z-[997] relative flex items-center justify-center ">
     <div className="prasadamscreenrow md:flex justify-content-center w-full">
       <div className="prasadamscreencolumn">
         <div className="banner_text wow fadeInLeft" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInLeft' }}>
