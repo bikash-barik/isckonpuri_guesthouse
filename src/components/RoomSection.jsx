@@ -29,7 +29,7 @@ export default function RoomSection() {
         <div className=" bg-green-700 md:w-auto w-[100%] overflow-hidden ">
           <img src={Room} alt="" className="md:w-auto  rounded-lg" />
           <div
-            className="absolute md:w-[550px] w-[360px]  md:-bottom-14 -bottom-32 md:left-40 ml-6 h-[270px] md:h-[290px] bg-white shadow-2xl
+            className="absolute md:w-[550px] w-[360px]  md:-bottom-14 -bottom-32 md:left-40 ml-0 h-[270px] md:h-[290px] bg-white shadow-2xl
           rounded-tl-[40px] rounded-br-[40px] px-10 md:py-10 py-3
           "
           >
