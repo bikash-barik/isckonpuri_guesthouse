@@ -36,7 +36,7 @@ export default function RoomCarausalCard({item}) {
       </div>
       <div className="px-5">
         <button className="w-full py-3 bg-orange-500 hover:bg-black text-white rounded" onClick={openModel}>
-          Book Now ₹{item.roomprice}.00
+          Book Now
         </button>
       </div>
     </div>

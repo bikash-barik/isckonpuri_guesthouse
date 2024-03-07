@@ -73,7 +73,7 @@ export const ExploreSectionCardData = [
 
 export const ImageContentSectionHeading = "Best Hotel For You";
 export const ImageContentSectionParagraph =
-  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, delectus odio! Maxime tempora facilis nulla est culpa necessitatibus? Amet architecto, sit sunt voluptates ad fuga magni asperiores est consequuntur quae modi ratione ipsa nulla laboriosam necessitatibus vero itaque sint. Consequuntur alias fugit esse veritatis obcaecati saepe totam, molestias voluptas! Illo, modi quos atque pariatur molestiae ex, ratione ab inventore sunt assumenda reprehenderit libero deserunt. Commodi odit ullam quasi, maiores quam inventore, consectetur minus nulla nihil officiis iure! Minus laudantium adipisci, quod est accusantium esse doloremque, quam architecto odit dolorem ipsam!";
+  "The temple food “Mahaprasad” (not simply prasad) at Puri is held to be of supreme importance. According to Skanda Purana Lord Jagannath redeems the devotees by permitting them to partake His Mahaprasad, to have His darshan and to worship Him by observing rituals and by offering of gifts.";
 
 // * first carausal content
 

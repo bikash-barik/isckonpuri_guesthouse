@@ -24,7 +24,7 @@ export default function CabVideo() {
                 href="mailto:info@example.com"
                 className="info-card_link text-xl"
               >
-                +91- 82495 05348
+                +91- 81147 35348
               </a>
             </div>
           </div>

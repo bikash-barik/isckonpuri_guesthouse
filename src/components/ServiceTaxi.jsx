@@ -92,10 +92,10 @@ export default function ServiceTaxi() {
                     </a>
                   </h3>
                   <p className="taxi-grid_subtitle">{item.taxilocation}</p>
-                  <p className="taxi-grid_info">
+                  {/* <p className="taxi-grid_info">
                     Price:        <br />
                     <span className="text-white">₹{item.taxiinitialcharge}</span>
-                  </p>
+                  </p> */}
                   {/* <p className="taxi-grid_info">
                     Additional Kilos:
                     <br />

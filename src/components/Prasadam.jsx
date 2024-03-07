@@ -50,8 +50,8 @@ export default function Prasadam() {
         >
           <div className="col-md-8 col-lg-7 col-xl-6">
             <div className="section_heading mb_25">
-              <h4>Prasadam</h4>
-              <h2>up to 55% off for this day</h2>
+              <h4>Special Prasadam</h4>
+              {/* <h2>up to 55% off for this day</h2> */}
             </div>
           </div>
         </div>

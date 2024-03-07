@@ -33,10 +33,10 @@ export default function RoomSection() {
           rounded-tl-[40px] rounded-br-[40px] px-10 md:py-10 py-3
           "
           >
-            <h1 className="font-semibold text-2xl capitalize">
+            {/* <h1 className="font-semibold text-2xl capitalize">
               <span className="text-orange-500  font-semibold">₹450</span> / Per
               Night
-            </h1>
+            </h1> */}
             <p className="text-2xl font-semibold md:mt-3">Family Rooms 5</p>
             <p className="text-gray-800 tracking-wide md:leading-8 mt-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting

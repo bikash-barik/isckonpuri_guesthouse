@@ -11,8 +11,9 @@ export default function FooterAbove() {
             <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="info-card_content">
-              <p className="info-card_text">Mobile Number</p>
-              <p>+91- 6370 995 573</p>
+            <p className="info-card_text">Mobile Number</p>
+              <p>+91- 8114 735 348</p>
+              
             </div>
         </div>
 
@@ -21,8 +22,8 @@ export default function FooterAbove() {
                  <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="info-card_content">
-              <p className="info-card_text">Mobile Number</p>
-              <p>+91- 8114 735 348</p>
+            <p className="info-card_text">Mobile Number</p>
+              <p>+91- 6370 995 573</p>
             </div>
         </div>
         <div className="footerabovecolumn3 gap-5">

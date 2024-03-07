@@ -40,8 +40,8 @@ export default function CabImageSlider() {
                 <div className="contentdiv" id='contentdiv1'>
 
                     <div className="contentdivinner">
-                            <h1 className='contentdivheading1'>Taxi Driver for Hire</h1>
-                            <h1 className='contentdivheading2'>Trusted & Cheapest Taxi</h1>
+                            {/* <h1 className='contentdivheading1'>Taxi Driver for Hire</h1> */}
+                            <h1 className='contentdivheading2'>Trusted & Cheapest</h1>
                             <h1 className='contentdivheading3'>Taxi for You</h1>
 
                             <div className="imagesliderbtndiv flex mt-4 gap-10">
@@ -61,8 +61,8 @@ export default function CabImageSlider() {
                  <div className="contentdiv" id='contentdiv2'>
 
                     <div className="contentdivinner">
-                            <h1 className='contentdivheading1'>Taxi Driver for Hire</h1>
-                            <h1 className='contentdivheading2'>Fastest & Cheapest Taxi</h1>
+                            {/* <h1 className='contentdivheading1'>Taxi Driver for Hire</h1> */}
+                            <h1 className='contentdivheading2'>Fastest & Cheapest </h1>
                             <h1 className='contentdivheading3'>Cars for You</h1>
 
                             <div className="imagesliderbtndiv flex mt-4 gap-10">
@@ -82,8 +82,8 @@ export default function CabImageSlider() {
                  <div className="contentdiv" id='contentdiv2'>
 
                     <div className="contentdivinner">
-                            <h1 className='contentdivheading1'>Taxi Driver for Hire</h1>
-                            <h1 className='contentdivheading2'>Trusted & Cheapest Taxi</h1>
+                            {/* <h1 className='contentdivheading1'>Taxi Driver for Hire</h1> */}
+                            <h1 className='contentdivheading2'>Trusted & Cheapest</h1>
                             <h1 className='contentdivheading3'>Taxi for You</h1>
 
                             <div className="imagesliderbtndiv flex mt-4 gap-10">

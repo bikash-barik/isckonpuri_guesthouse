@@ -49,7 +49,7 @@ export default function DailyOffer() {
           <div className="col-md-8 col-lg-7 col-xl-6">
             <div className="section_heading mb_25 text-center">
               <h4>Prasadam</h4>
-              <h2>up to 35% off for this day</h2>
+              {/* <h2>up to 35% off for this day</h2> */}
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function DailyOffer() {
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
                       <div className="dailyofferul">
 
-                      <div className='dailyofferuldiv'>
+                      {/* <div className='dailyofferuldiv'>
                         <ul className="flex">
                         <li>
                           <Link to="/">
@@ -88,7 +88,7 @@ export default function DailyOffer() {
                           </a>
                         </li>
                       </ul>
-                        </div>
+                        </div> */}
                         <div className="dailyofferbtndiv">
                             <button className='dailyofferbtn'onClick={openModel}>Buy Now</button>
                       </div>
@@ -117,7 +117,7 @@ export default function DailyOffer() {
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
                       <div className="dailyofferul">
 
-                      <div className='dailyofferuldiv'>
+                      {/* <div className='dailyofferuldiv'>
                         <ul className="flex">
                         <li>
                           <Link to="/">
@@ -135,7 +135,7 @@ export default function DailyOffer() {
                           </a>
                         </li>
                       </ul>
-                        </div>
+                        </div> */}
                         <div className="dailyofferbtndiv">
                             <button className='dailyofferbtn'onClick={openModel}>Buy Now</button>
                       </div>
@@ -164,7 +164,7 @@ export default function DailyOffer() {
                       <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
                       <div className="dailyofferul">
 
-                      <div className='dailyofferuldiv'>
+                      {/* <div className='dailyofferuldiv'>
                         <ul className="flex">
                         <li>
                           <Link to="/">
@@ -182,7 +182,7 @@ export default function DailyOffer() {
                           </a>
                         </li>
                       </ul>
-                        </div>
+                        </div> */}
                         <div className="dailyofferbtndiv">
                             <button className='dailyofferbtn'onClick={openModel}>Buy Now</button>
                       </div>

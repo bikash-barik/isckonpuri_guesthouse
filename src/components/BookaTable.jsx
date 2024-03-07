@@ -10,7 +10,7 @@ export default function BookaTable() {
 
             <div className="bookatablecolumn">
 
-            <h1 className="bookatableheading">Book a Table</h1>
+            <h1 className="bookatableheading">Book Prasadam</h1>
 
             <div className="bookatablecolumninner">
                 <div className="bookatableinputdiv">
@@ -32,7 +32,20 @@ export default function BookaTable() {
                 </div>
     
                 <div className="bookatableinputdiv">
-                <label className="bookatableinputdivlabel" htmlFor="">Select Date</label>
+                <label className="bookatableinputdivlabel" htmlFor="">Enter Location</label>
+                <input className="bookatableinputdivinput" type="text" placeholder="Location"/>
+                </div>
+                
+            </div>
+
+            <div className="bookatablecolumninner">
+                <div className="bookatableinputdiv">
+                <label className="bookatableinputdivlabel" htmlFor="">Select CheckIn Date</label>
+                <input className="bookatableinputdivinput" type="date" placeholder="Date"/>
+                </div>
+    
+                <div className="bookatableinputdiv">
+                <label className="bookatableinputdivlabel" htmlFor="">Select CheckOut Date</label>
                 <input className="bookatableinputdivinput" type="date" placeholder="Date"/>
                 </div>
                 
@@ -65,11 +78,29 @@ export default function BookaTable() {
             </div>
 
             <div className="bookatablecolumninner">
+            
+            <div className="bookatableinputdiv">
+            <label className="bookatableinputdivlabel" htmlFor="">Select Plate</label>
+            <select className="bookatableinputdivinput" name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Break Fast</option>
+                    <option value="">Lunch</option>
+                    <option value="">Dinner</option>
+            </select>
+            </div>
+            
+           </div>
+
+            <div className="bookatablecolumninner">
             <button type="submit" className="common_btn">confirm</button>
             </div>
             </div>
+
         </div>
        
+       <div className="bookatablecolumndiv">
+
+       </div>
       </div>
     </div>
   );
