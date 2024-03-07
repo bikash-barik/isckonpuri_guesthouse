@@ -6,7 +6,7 @@ export default function PrasadamHeroSection() {
   return (
     <div className="prasadamscreendiv w-full md:h-[800px] h-[850px] z-[997] relative flex items-center justify-center ">
     <div className="prasadamscreenrow md:flex justify-content-center w-full">
-      <div className="prasadamscreencolumn">
+      <div className="prasadamscreencolumn1">
         <div className="banner_text" >
           <h3 className='prasadamscreenh3'>Sacred Krishna Flavours.</h3>
           <h1 className='prasadamscreenh1'>Krishna's mercy-filled prasad delights.</h1>
@@ -17,7 +17,7 @@ export default function PrasadamHeroSection() {
           </form>
         </div>
       </div>
-      <div className="prasadamscreencolumn prasadamscreencolumn1">
+      <div className="prasadamscreencolumn1">
         <div className="banner_img ">
           <div className="prasadamscreenimagediv">
             <img src={sliderimage} alt="fooditem" className="img-fluid w-100" />

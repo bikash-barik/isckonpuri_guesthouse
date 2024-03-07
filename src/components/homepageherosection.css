@@ -156,14 +156,12 @@ form .commonbtn {
 
   .homescreenrow{
     flex-direction: column;
+    margin: 20px 0;
   }
 
   .homescreencolumn1{
     width: 100%;
-  }
-
-  .homescreenimagediv{
-    padding: 10px;
+    padding: 0;
   }
 
   .homescreenimagediv::after{
