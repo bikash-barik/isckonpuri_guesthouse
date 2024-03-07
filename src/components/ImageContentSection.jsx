@@ -1,11 +1,13 @@
 import React from 'react'
-import swiss from "../assets/swiss.jpg"
+// import swiss from "../assets/swiss.jpg";
+import prasadhimage from '../assets/prasadhimage.jpg';
+
 import { ImageContentSectionParagraph } from '../Textfiles/webiste-Content'
 
 export default function ImageContentSection() {
   return (
     <div className='w-full md:h-[600px] relative'>
-      <img src={swiss} alt="" className='w-full h-full object-cover' />
+      <img src={prasadhimage} alt="" className='w-full h-full ' />
       <div className='absolute left-0 top-0 md:py-0 py-10 md:px-0 px-10 
       md:flex md:flex-col md:justify-center md:items-center w-full h-full bg-black bg-opacity-50
       justify-center items-center '>
