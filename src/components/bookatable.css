@@ -115,9 +115,22 @@
 @media screen and (max-width:600px) {
     .bookatablecolumndiv{
         padding: 10px;
+        width: 100%;
+    }
+
+    .bookatablecolumn{
+        margin: 0;
     }
 
     .bookatablerow{
         width: 100%;
+    }
+
+    .bookatableinputdivdateinput{
+        padding: 8px;
+    }
+
+    .bookatableinputdiv1{
+        margin: 0 5px;
     }
 }

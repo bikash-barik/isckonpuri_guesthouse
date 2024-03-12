@@ -122,5 +122,8 @@
     .add_slider{
         padding: 15px;
     }
+    .add_slider_single .text {
+        width: 100%;
+    }
 }
 

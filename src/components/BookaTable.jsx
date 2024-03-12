@@ -40,13 +40,13 @@ export default function BookaTable() {
 
             <div className="bookatablecolumninner">
                 <div className="bookatableinputdiv">
-                <label className="bookatableinputdivlabel" htmlFor="">Select CheckIn Date</label>
-                <input className="bookatableinputdivinput" type="date" placeholder="Date"/>
+                <label className="bookatableinputdivlabel" htmlFor="">CheckIn Date</label>
+                <input className="bookatableinputdivinput bookatableinputdivdateinput" type="date" placeholder="Date"/>
                 </div>
     
-                <div className="bookatableinputdiv">
-                <label className="bookatableinputdivlabel" htmlFor="">Select CheckOut Date</label>
-                <input className="bookatableinputdivinput" type="date" placeholder="Date"/>
+                <div className="bookatableinputdiv bookatableinputdiv1">
+                <label className="bookatableinputdivlabel" htmlFor="">CheckOut Date</label>
+                <input className="bookatableinputdivinput bookatableinputdivdateinput" type="date" placeholder="Date"/>
                 </div>
                 
             </div>
