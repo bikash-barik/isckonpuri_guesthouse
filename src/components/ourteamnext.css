@@ -14,12 +14,33 @@
 }
 
 .teamnextcolumn1{
-    background-image: url(../assets/offer_slider_1.png);
+    background-image: url(../assets/travel-prasadam.jpg);
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .teamnextcolumn2{
-    background-image: url(../assets/offer_slider_2.png);
+    background-image: url(../assets/jagganath-aabha.jpg);
+    color: white;
+    position: relative;
+    z-index: 1;
 }
+
+.teamnextcolumn1::after,.teamnextcolumn2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* height: 83vh; */
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
 .add_slider_single {
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -51,7 +72,7 @@
 }
 
 .add_slider_single h2 {
-    color: var(--colorBlack);
+    color: white;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -72,8 +93,9 @@
     transition: all linear .3s;
     text-decoration: none;
     padding: 10px;
-    background-color: #ff7c0826;
+    background-color: #ff7c08;
     border-radius: 10px;
+    color: white;
 }
 
 .add_slider_single a i {
@@ -85,6 +107,9 @@
     border-color: var(--colorPrimary);
 }
 
+.travelprasadam{
+
+}
 @media screen and (max-width:600px) {
     .addsliderrow{
         flex-direction: column;
