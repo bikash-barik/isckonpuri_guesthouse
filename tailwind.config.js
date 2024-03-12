@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         "hero-background": "url('./assets/Lord.jpg')",
         "imageContent-background": "url('./assets/swiss.jpg')",
-        "hotelBackground-Image":"url('./assets/hotelbg.png')",
+        "hotelBackground-Image":"url('./assets/tour-bg.jpg')",
       },
     },
   },

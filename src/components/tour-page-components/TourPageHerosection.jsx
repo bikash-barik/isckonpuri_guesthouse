@@ -5,7 +5,7 @@ import React from "react";
 export default function TourPageHerosection() {
   
   return (
-    <div className="bg-hotelBackground-Image w-full md:h-[600px] h-[400px] relative pb-10">
+    <div className="bg-hotelBackground-Image w-full md:h-[600px] h-[400px] relative">
       <div className="w-full h-full  bg-black bg-opacity-50 flex items-center justify-center">
         <div className="text-white text-center">
           <h1 className="md:text-7xl text-5xl ">Tour Plan</h1>
