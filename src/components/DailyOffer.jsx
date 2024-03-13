@@ -72,7 +72,7 @@ export default function DailyOffer() {
                       <a className="title" href="menu_details.html">
                         Breakfast
                       </a>
-                      <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
+                      <p>Nutritious start, divine flavors; ISKCON's morning feast delights with spiritual nourishment.</p>
                       <div className="dailyofferul">
 
                       {/* <div className='dailyofferuldiv'>
@@ -120,7 +120,7 @@ export default function DailyOffer() {
                       <a className="title" href="menu_details.html">
                         Lunch
                       </a>
-                      <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
+                      <p>ISKCON's midday grace—wholesome, sanctified; a divine meal to uplift and satisfy.</p>
                       <div className="dailyofferul">
 
                       {/* <div className='dailyofferuldiv'>
@@ -168,7 +168,7 @@ export default function DailyOffer() {
                       <a className="title" href="menu_details.html">
                         Dinner
                       </a>
-                      <p>Enim ipsam voluptat in quia voluptas sit aspe rnatur aut odit aut.</p>
+                      <p> Evening serenity on the plate; ISKCON's dinner, a spiritual banquet embracing sustenance.</p>
                       <div className="dailyofferul">
 
                       {/* <div className='dailyofferuldiv'>

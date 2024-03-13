@@ -1,6 +1,6 @@
 import React from 'react';
 import './touristguidehome.css';
-import tghomeimg from '../assets/slider-decor.png';
+// import tghomeimg from '../assets/slider-decor.png';
 
 export default function TouristGuideHome() {
   return (
