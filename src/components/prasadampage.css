@@ -1,8 +1,8 @@
 .prasadamscreendiv{
-    background-image: url(../assets/banner_bg.jpg);
+    background-image: url(../assets/prasadam-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 100% 100%;
     position: relative;
     color: #fff;
     /* padding-top: 30px; */
