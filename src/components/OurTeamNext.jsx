@@ -23,7 +23,7 @@ export default function OurTeamNext() {
                         <div className="text">
                             {/* <h5>weekly best seller</h5> */}
                             <h2>Travel Prasadam</h2>
-                            <p>Neque porro quisquam est qui dolor ipsum quia dolor sit ametsed.</p>
+                            <p>Discover divine flavors on your journey with Travel Prasadam – sacred nourishment for wanderers.</p>
                             <button  onClick={openModel}>Book Now <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export default function OurTeamNext() {
                         <div className="text">
                             {/* <h5>daily offer</h5> */}
                             <h2>Jagannath Abhada</h2>
-                            <p>Neque porro quisquam est qui dolor ipsum quia dolor sit ametsed.</p>
+                            <p>Jagannath Abhada: A divine feast from the heart of devotion, satisfying body and soul.</p>
                             <button  onClick={openModel}>Book Now <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
