@@ -32,7 +32,7 @@ export default function BookTaxiOnline() {
             <div className="booktaxiinputdiv1">
               <span className="wpcf7-form-control wpcf7-radio">
                 <span className="wpcf7-list-item first">
-                  <input type="radio" name="radio-170" value="STANDARD"checked="checked"/>
+                  <input type="radio" name="radio-170" value="STANDARD"/>
                   <span className="wpcf7-list-item-label">STANDARD</span>
                 </span>
                 <span className="wpcf7-list-item">
@@ -76,7 +76,7 @@ export default function BookTaxiOnline() {
 
               <div className="cabinputdiv">
               <input className="cabinput mx-4" type="text" name="" id="" placeholder="Select Time"/>
-                <button className="cabbutton w-1/2 mr-4" onClick={openModel}>
+                <button className="cabbutton w-1/2 mr-4">
                   BOOK TAXI NOW
                 </button>
               </div>

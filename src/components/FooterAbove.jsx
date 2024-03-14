@@ -33,7 +33,7 @@ export default function FooterAbove() {
             </div>
             <div className="info-card_content">
               <p className="info-card_text">Mobile Number</p>
-              <p>+91- 7978 699 120</p>
+              <p>+91 9518 379 300</p>
             </div>
         </div>
       </div>
