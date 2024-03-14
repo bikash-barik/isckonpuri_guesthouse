@@ -47,9 +47,14 @@
     width: 100%;
 }
 .contactusinput{
-width: 50%;
+width: 100%;
 padding: 15px;
 border: 1px solid #ccc;
+display: inline-block;
+}
+
+.checkoutspan{
+    color: red;
 }
 
 .contactusinputbtn{
