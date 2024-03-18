@@ -65,17 +65,17 @@ export default function BookTaxiOnline() {
               </div>
 
               <div className="cabinputdiv">
-              <input className="cabinput mx-4" type="text" placeholder="Passenger#"/>
+              <input className="cabinput mx-4" type="number" placeholder="Number of Passenger"/>
                 <input className="cabinput mr-4" type="text" name="" id="" placeholder="Start Destination"/>
               </div>
 
               <div className="cabinputdiv">
               <input className="cabinput mx-4" type="text" placeholder="End Destination"/>
-                <input className="cabinput mr-4" type="text" name="" id="" placeholder="Select Date"/>
+                <input className="cabinput mr-4" type="date" name="" id="" placeholder="Select Date"/>
               </div>
 
               <div className="cabinputdiv">
-              <input className="cabinput mx-4" type="text" name="" id="" placeholder="Select Time"/>
+              <input className="cabinput mx-4" type="time" name="" id="" placeholder="Select Time"/>
                 <button className="cabbutton w-1/2 mr-4">
                   BOOK TAXI NOW
                 </button>

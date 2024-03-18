@@ -87,14 +87,15 @@ const Rooms = ({roomdata}) => {
       <div className="box">
         <div className="product-container">
           <div className="main-slider">
-            <Slider ref={mainSliderRef} {...mainSliderSettings}>
+            {/* <Slider ref={mainSliderRef} {...mainSliderSettings}>
               {room.images.map((image, index) => (
                 <div key={index}>
                   <img src={image} alt={`Room ₹{index + 1}`} />
                 </div>
               ))}
-            </Slider>
-            <div className=" gap-2">
+            </Slider> */}
+            <img src={roomdata.imageUrl} alt="guesthouseimage"/>
+            {/* <div className=" gap-2">
               <button
                 onClick={handleMainSliderNext}
                 className="mt-2 ml-28 text-center px-2 py-2 bg-orange-500 border border-orange-500 text-white text-xl font-bold rounded hover:bg-transparent hover:text-black hover:border-black transition-all duration-75"
@@ -107,9 +108,9 @@ const Rooms = ({roomdata}) => {
               >
                 <FaAngleLeft />
               </button>
-            </div>
+            </div> */}
           </div>
-          <div className="strip-slider">
+          {/* <div className="strip-slider">
             <Slider ref={stripSliderRef} {...stripSliderSettings}>
               {room.images.map((image, index) => (
                 <div key={index}>
@@ -117,21 +118,21 @@ const Rooms = ({roomdata}) => {
                 </div>
               ))}
             </Slider>
-          </div>
+          </div> */}
         </div>
         <div className="details-container">
           <div className="description">
-            <h2>{roomdata.roomtype}</h2>
+            <h2>{roomdata.roomdescription}</h2>
             {/* <a href="/">View More</a> */}
           </div>
           <div className="view2">
             <div className="distance">
-              {roomdata.roomdescription}
+              {roomdata.roomtype}
               {/* <img src={room.icon} alt=""></img> */}
               {/* <p>5.9 KM</p> */}
             </div>
           </div>
-          <span className="lorem">{room.description}</span>
+          <span className="lorem">{roomdata.roomtype}</span>
           <div className="distance" id="scrn">
             {/* <img src={room.icon} alt=""></img> */}
             {/* <p>5.9 KM</p> */}

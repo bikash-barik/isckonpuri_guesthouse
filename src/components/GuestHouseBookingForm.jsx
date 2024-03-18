@@ -245,6 +245,7 @@ export default function GuestHouseBookingForm() {
           <div className="bookingforminputdiv">
             <label className="bookingformlabel" htmlFor="price-range">Price Range</label>
             <select className="bookingforminput" defaultValue="0-1000" id="price-range" placeholder="select an option" onChange={(e)=>{setRange(e.target.value)}}>
+                <option value="">Select an option</option>
                 <option value="0-1000">0-1000</option>
                 <option value="1000-2000">1000-2000</option>
                 <option value="2000-3000">2000-3000</option>
@@ -257,6 +258,7 @@ export default function GuestHouseBookingForm() {
         <div className="bookingforminputdiv">
           <label className="bookingformlabel" htmlFor="room-type">Room Type</label>
           <select className="bookingforminput" defaultValue="AC" id="room-type"  placeholder="select an option" onChange={(e)=>{setRoomType(e.target.value)}}>
+          <option value="">Select an option</option>
             <option value="AC">AC</option>
               <option value="NON AC">NON AC</option>
           </select>

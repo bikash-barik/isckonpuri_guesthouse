@@ -1,7 +1,7 @@
 .box {
   display: flex;
   gap: 7px;
-  position: relative;
+  /* position: relative; */
   width: 70vw;
   margin-top: 40px;
   padding-bottom: 20px; /* Add some space between the cards */
@@ -10,7 +10,7 @@
 
 .product-container {
   height: 60vh;
-  width: 45vw;
+  width: 40%;
   display: flex;
   gap: 6px; /* Adjust the gap based on your preference */
   margin-right: 7px;
@@ -19,7 +19,7 @@
 
 .main-slider {
   height: 80%;
-  width: 65%;
+  width: 100%;
   line-height: 0;
 }
 
@@ -41,12 +41,13 @@
 
 .details-container {
   height: 100%;
-  width: 40vw;
+  width: 60%;
   flex-grow: 10;
   max-width: 500px;
-  margin-left: -110px;
+  /* margin-left: -110px; */
   margin-bottom: 90px;
   padding: 1px;
+  padding-left: 50px;
   box-sizing: border-box;
   flex-direction: column;
   flex-wrap: wrap;
