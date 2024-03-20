@@ -42,7 +42,7 @@ const RoomsSuite = () => {
       </div>
       <HotelFacilities/>
        <Label />
-      <RanS/>
+      <RanS title="Hotels in Puri"/>
       <div className="w-full flex">
         <div className="w-30%">
           <PriceRangeSlider/>

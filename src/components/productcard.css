@@ -42,6 +42,15 @@
      box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
      transform: translateY(-1vmax);
  }
+
+ .productshopnowbtn{
+    color: #ffffff;
+    border-radius: 0.375rem;
+    margin-right: 10px;
+    margin-left: auto;
+    padding: 8px;
+    background-color: tomato;
+ }
  
  @media screen and (max-width:600px)  {
      .productCard >p{

@@ -1,7 +1,7 @@
 import React from "react";
 import "./rans.css";
 
-const RanS = () => {
+const RanS = ({title}) => {
   return (
     <div className="rans">
       <div className="child-sortbox">
@@ -9,7 +9,7 @@ const RanS = () => {
         <span className="collor">Clear All</span>
       </div>
       <div className="child-card">
-        <h1>Hotels, in Puri</h1>
+        <h1>{title}</h1>
         <div className="toggle">
           <span>Map View</span>
           <label class="switch">

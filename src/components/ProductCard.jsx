@@ -30,6 +30,7 @@ export default function ProductCard() {
         <ReactStars {...options} /> <span>({product.numOfReviews} Reviews)</span>
     </div>
     <span>{`₹${product.price}`}</span>
+    <button className="productshopnowbtn">Shop Now</button>
    </Link>
   )
 }
