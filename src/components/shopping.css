@@ -1,0 +1,16 @@
+.shoppingsection{
+    display: flex;
+    margin: 6vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+@media screen  and (max-width:600px) {
+    .shoppingsection{
+        padding-top: 15vmax ;
+        margin-top: 0;
+    }
+   
+}

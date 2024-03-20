@@ -77,6 +77,10 @@ export default function Navbar() {
             </li>
 
             <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
+              <a href="/shopping" onClick={() => setOpne(false)}  className="hover:text-red-500">Shoping</a>
+            </li>
+
+            <li className=" md:ml-10 ml-0 md:my-0 my-7 font-semibold" >
               <a href="/tour" onClick={() => setOpne(false)}  className="hover:text-red-500">Tour</a>
             </li>
 
