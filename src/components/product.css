@@ -233,11 +233,11 @@ input[type="range"] {
   .details-container {
     height: 40vh;
     width: 100vw;
-    padding: 1px;
+    padding: 4%;
     box-sizing: border-box;
     flex-direction: column;
     margin-left: 2%;
-    margin-top: -40%;
+    margin-top: -30%;
   }
 
   .description {
