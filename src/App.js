@@ -33,6 +33,7 @@ import loadingImage from './assets/hotelbookingreloader.gif';
 import "./App.css";
 import NotFound from "./pages/NotFound.jsx";
 import Shoping from "./pages/Shoping.jsx";
+import ProductDescription from "./pages/ProductDescription.jsx";
 
 const isAuthenticated = () => {
   // Check Firebase if there's a logged-in user
@@ -109,6 +110,10 @@ const routes = [
       {
         path:"/shopping",
         element:<Shoping/> 
+      },
+      {
+        path:"/product/:id",
+        element:<ProductDescription/> 
       },
       {
         path:"/cab-booking",
