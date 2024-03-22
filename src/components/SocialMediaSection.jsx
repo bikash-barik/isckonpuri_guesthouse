@@ -44,7 +44,7 @@ export default function SocialMediaSection() {
   return (
     <div className="w-full h-auto md:mb-10 mb-2 border md:pt-32">
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
-      Enjoy Our Odisha
+      ENJOY OUR ODISHA
       </h1>
       <div className="flex justify-center items-center">
       <div className="w-11/12 mt-8">
