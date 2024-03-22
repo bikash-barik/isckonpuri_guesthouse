@@ -68,7 +68,7 @@ export default function HomeCarausalOne() {
   return (
     <div className="w-full h-auto mb-10 pt-8 md:px-16 px:0 md:mb-6">
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
-      Visiting Spot
+      Sightseen Tour
       </h1>
       <div
         ref={boxRef}

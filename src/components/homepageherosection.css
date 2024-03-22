@@ -1,8 +1,8 @@
 .heroscreendiv{
-    background-image: url(../assets/pexels-manas-patra-14862819.jpg);
+    background-image: url(../assets/home-hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     position: relative;
     color: #fff;
     display: flex;

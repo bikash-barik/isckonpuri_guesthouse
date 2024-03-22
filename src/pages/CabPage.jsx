@@ -4,7 +4,9 @@ import CabVideo from '../components/CabVideo'
 import ServiceTaxi from '../components/ServiceTaxi'
 import BookTaxiOnline from '../components/BookTaxiOnline'
 // import cabbookingloader from '../assets/cabreloader.gif'
-import CabImageSlider from '../components/CabImageSlider'
+import CabImageSlider from '../components/CabImageSlider';
+import SocialMediaSection from "../components/SocialMediaSection";
+import HomeCarausalOne from "../components/HomeCarausalOne";
 export default function CabPage() {
   // const [loading, setLoading] = useState(true);
 
@@ -25,8 +27,10 @@ export default function CabPage() {
       ) : ( */}
         <>
         <CabImageSlider/>
-        <BookTaxiOnline/>
+        <SocialMediaSection/>
+        <HomeCarausalOne />
         <ServiceTaxi/>
+        <BookTaxiOnline/>
         <CabVideo/>
         <BookCapContact/>
       </>

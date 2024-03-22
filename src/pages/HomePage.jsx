@@ -43,7 +43,7 @@ export default function HomePage() {
       <OurTeam/>
       <ExploreSection />
       <ImageContentSection />
-      <HomeCarausalOne />
+      {/* <HomeCarausalOne /> */}
       <RoomSection />
       {/* <SocialMediaSection /> */}
       <DailyOffer/>

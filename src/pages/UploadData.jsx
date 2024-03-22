@@ -48,8 +48,9 @@ const ImageUpload = () => {
   const [roomprice,setroomprice] = useState("");
 
   const [taxiname,settaxiname] = useState("");
-  const [taxilocation,settaxilocation] = useState("");
-  const [taxiinitialcharge,settaxiinitialcharge] = useState("");
+  const [taxinumofseats,settaxinumofseats] = useState("");
+  // const [taxilocation,settaxilocation] = useState("");
+  // const [taxiinitialcharge,settaxiinitialcharge] = useState("");
 
   const[heritagename,setheritagename] = useState("");
   const [heritagedescription,setheritagedescription] =useState("");
@@ -359,8 +360,9 @@ const ImageUpload = () => {
       const submissionData = {
         imageUrl: downloadURL,
         taxiname:taxiname,
-        taxilocation:taxilocation,
-        taxiinitialcharge:taxiinitialcharge,
+        numOfSeats:taxinumofseats,
+        // taxilocation:taxilocation,
+        // taxiinitialcharge:taxiinitialcharge,
         submittedAt: timestamp,
       };
       await firestore.collection("TaxiRateData").add(submissionData);
@@ -372,8 +374,9 @@ const ImageUpload = () => {
 
      setFile(null);
     settaxiname("");
-    settaxilocation("");
-    settaxiinitialcharge("");
+    settaxinumofseats("");
+    // settaxilocation("");
+    // settaxiinitialcharge("");
     } catch (error) {
          setMessage({ type: 'error', text: 'Failed to submit data. Please try again.' });
          setTimeout(() => {
@@ -680,11 +683,11 @@ const ImageUpload = () => {
               <label htmlFor="" className="mb-2">Enter Taxi Name</label>
               <input type="text" className="px-4 py-4 mb-2 border" value={taxiname} onChange={(e) => settaxiname(e.target.value)}/>
 
-              <label htmlFor="" className="mb-2">Enter Taxi Location </label>
-              <input type="text" className="px-4 py-4 mb-2 border" value={taxilocation} onChange={(e) => settaxilocation(e.target.value)}/>
+              {/* <label htmlFor="" className="mb-2">Enter Taxi Location </label>
+              <input type="text" className="px-4 py-4 mb-2 border" value={taxilocation} onChange={(e) => settaxilocation(e.target.value)}/> */}
 
-              <label htmlFor="" className="mb-2">Enter price</label>
-              <input type="number" className="px-4 py-4 mb-2 border" value={taxiinitialcharge} onChange={(e) => settaxiinitialcharge(e.target.value)}/>
+              <label htmlFor="" className="mb-2">Enter Number of Seats</label>
+              <input type="number" className="px-4 py-4 mb-2 border" value={taxinumofseats} onChange={(e) => settaxinumofseats(e.target.value)}/>
 
               <button className="uploadimagebtn" onClick={handleUploadTaxiRate} style={{ marginTop: "5px", borderRadius: "5px" }}>Upload</button>
             </div>

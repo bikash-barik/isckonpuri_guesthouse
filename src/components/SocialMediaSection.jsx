@@ -3,6 +3,9 @@ import { InstagramCardData } from "../Textfiles/webiste-Content";
 import { SocialMediaCard } from "./SocialMediaCard";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function SocialMediaSection() {
   const [ExplorePlaceData, setExplorePlaceData] = useState([]);
@@ -19,12 +22,33 @@ export default function SocialMediaSection() {
     });
     return () => unsubscribe();
   }, []);
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    loop: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="w-full h-auto md:mb-10 mb-2 border md:pt-32">
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
-      Explore These Places
+      Enjoy Our Odisha
       </h1>
-      <div className="flex w-full px-4 pb-6 justify-around mt-10 gap-10 overflow-x-scroll md:overflow-hidden">
+      <div className="flex justify-center items-center">
+      <div className="w-11/12 mt-8">
+      <Slider {...settings} >
         {
           ExplorePlaceData.length > 0 ?
           ExplorePlaceData.map((item,index) =>{
@@ -35,8 +59,10 @@ export default function SocialMediaSection() {
                 return <SocialMediaCard key={index} imgUrl={item.imgurl} placename={item.placename}/>
             })
         }
-       
+       </Slider>
       </div>
+      </div>
+      
     </div>
   );
 }
