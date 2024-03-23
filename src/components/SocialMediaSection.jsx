@@ -42,7 +42,7 @@ export default function SocialMediaSection() {
     ],
   };
   return (
-    <div className="w-full h-auto md:mb-10 mb-2 border md:pt-32">
+    <div className="w-full h-auto md:mb-10 mb-2 border md:pt-20">
       <h1 className="text-4xl underline decoration-orange-500 w-full text-center tracking-wide">
       ENJOY OUR ODISHA
       </h1>

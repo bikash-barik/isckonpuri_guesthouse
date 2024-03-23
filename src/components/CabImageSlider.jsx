@@ -42,10 +42,10 @@ export default function CabImageSlider() {
                     <div className="contentdivinner">
                             {/* <h1 className='contentdivheading1'>Taxi Driver for Hire</h1> */}
                             <h1 className='contentdivheading2'>Trusted & Cheapest</h1>
-                            <h1 className='contentdivheading3'>Taxi for You</h1>
+                            <h1 className='contentdivheading3'>Tours for You</h1>
 
                             <div className="imagesliderbtndiv flex mt-4 gap-10">
-                                  <button className='imagesliderbtn1'>Learn More</button>
+                                  <button className='imagesliderbtn1'>Explore Tours</button>
                                   <button className='imagesliderbtn2'>Find a Taxi</button>
                             </div>
                     </div>
@@ -66,7 +66,7 @@ export default function CabImageSlider() {
                             <h1 className='contentdivheading3'>Cars for You</h1>
 
                             <div className="imagesliderbtndiv flex mt-4 gap-10">
-                                  <button className='imagesliderbtn1'>Learn More</button>
+                                  <button className='imagesliderbtn1'>Explore Tours</button>
                                   <button className='imagesliderbtn2'>Find a Taxi</button>
                             </div>
                     </div>
@@ -84,10 +84,10 @@ export default function CabImageSlider() {
                     <div className="contentdivinner">
                             {/* <h1 className='contentdivheading1'>Taxi Driver for Hire</h1> */}
                             <h1 className='contentdivheading2'>Trusted & Cheapest</h1>
-                            <h1 className='contentdivheading3'>Taxi for You</h1>
+                            <h1 className='contentdivheading3'>Tours for You</h1>
 
                             <div className="imagesliderbtndiv flex mt-4 gap-10">
-                                  <button className='imagesliderbtn1'>Learn More</button>
+                                  <button className='imagesliderbtn1'>Explore Tours</button>
                                   <button className='imagesliderbtn2'>Find a Taxi</button>
                             </div>
                     </div>

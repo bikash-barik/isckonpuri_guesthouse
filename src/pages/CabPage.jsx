@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 import BookCapContact from '../components/BookCapContact'
 import CabVideo from '../components/CabVideo'
 import ServiceTaxi from '../components/ServiceTaxi'
@@ -7,6 +7,9 @@ import BookTaxiOnline from '../components/BookTaxiOnline'
 import CabImageSlider from '../components/CabImageSlider';
 import SocialMediaSection from "../components/SocialMediaSection";
 import HomeCarausalOne from "../components/HomeCarausalOne";
+import TourDescription from "../components/TourDescription";
+import PopularPackages from "../components/PopularPackagesHome";
+import LocalSIghtSeen from '../components/LocalSightSeen'
 export default function CabPage() {
   // const [loading, setLoading] = useState(true);
 
@@ -27,8 +30,11 @@ export default function CabPage() {
       ) : ( */}
         <>
         <CabImageSlider/>
+        <TourDescription/>
         <SocialMediaSection/>
+        <PopularPackages/>
         <HomeCarausalOne />
+        <LocalSIghtSeen/>
         <ServiceTaxi/>
         <BookTaxiOnline/>
         <CabVideo/>

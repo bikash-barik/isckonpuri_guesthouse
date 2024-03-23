@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 // import Herosection from "../components/Herosection";
 import Rooms from "../components/Rooms";
 import Sortbox from "../components/Sortbox";
@@ -12,7 +12,7 @@ import HotelDescription from "../components/tour-page-components/HotelDescriptio
 import HotelDescriptionAndPrice from "../components/tour-page-components/HotelDescriptionAndPrice";
 // import RoomsCarausalSection from "../components/RoomsCarausalSection";
 import HotelFacilities from "../components/tour-page-components/HotelFacilities";
-import HotelPageHeroSection from '../components/HotelPageHeroSection';
+// import HotelPageHeroSection from '../components/HotelPageHeroSection';
 import Herosection from '../components/Herosection';
 const RoomsSuite = () => {
   // const [loading, setLoading] = useState(true);

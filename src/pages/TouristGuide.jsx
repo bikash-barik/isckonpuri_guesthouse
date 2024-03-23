@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import TouristGuideHome from '../components/TouristGuideHome'
 import AdventureIdeas from '../components/AdventureIdeas'
 import ExploreActivities from '../components/ExploreActivities'

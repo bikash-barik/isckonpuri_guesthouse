@@ -41,6 +41,10 @@ const ImageUpload = () => {
   
   const [placename,setplacename] = useState("");
 
+
+  const [localsightseenplacename,setlocalsightseenplacename] = useState("");
+
+
   const [roomtype,setroomtype] = useState("");
   const [roomcapacityadults,setroomcapacityadults] = useState("");
   const [roomcapacitychildrens,setroomcapacitychildrens] = useState("");
@@ -275,6 +279,50 @@ const ImageUpload = () => {
 
      setFile(null);
      setplacename("");
+    } catch (error) {
+         setMessage({ type: 'error', text: 'Failed to submit data. Please try again.' });
+         setTimeout(() => {
+          setLoading(false);
+        }, 5000);
+    }
+  };
+
+
+  const handleUploadLocalSightSeen = async (e) => {
+    e.preventDefault();
+    try {
+      if (!file) {
+        alert("Please select an image.");
+        return;
+      }
+
+      setLoading(true);
+      setMessage({text:"Please wait until your data is submitted!..."});
+
+      const firestore = firebase1.firestore();
+      const storage = firebase1.storage();
+      
+      const storageRef = storage.ref(`images/${file.name}`);
+      const uploadTask = storageRef.put(file);
+
+      const snapshot = await uploadTask;
+      const downloadURL = await snapshot.ref.getDownloadURL();
+
+      const timestamp = firebase1.firestore.FieldValue.serverTimestamp();
+      const submissionData = {
+        imageUrl: downloadURL,
+        localsightseenplacename:localsightseenplacename,
+        submittedAt: timestamp,
+      };
+      await firestore.collection("LocalSightSeenData").add(submissionData);
+
+      setMessage({ type: 'success', text: 'Data submitted successfully!' });
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+
+     setFile(null);
+     setlocalsightseenplacename("");
     } catch (error) {
          setMessage({ type: 'error', text: 'Failed to submit data. Please try again.' });
          setTimeout(() => {
@@ -639,6 +687,25 @@ const ImageUpload = () => {
 
         </div>
 
+         <div className="uploadimagerow">
+
+          <div className="uploadimagecolumn">
+            <div className="uploadimagecolumninnerdiv">
+              <h3 className="mb-8 text-center font-bold text-2xl">Puri Local SightSeen </h3>
+              <input className="mb-4" type="file" onChange={handleFileChange} />
+
+              <label htmlFor="" className="mb-2">Enter Place Name</label>
+              <input type="text" className="px-4 py-4 mb-2 border" value={localsightseenplacename} onChange={(e) => setlocalsightseenplacename(e.target.value)}/>
+
+              <button className="uploadimagebtn" onClick={handleUploadLocalSightSeen} style={{ marginTop: "5px", borderRadius: "5px" }}>Upload</button>
+            </div>
+          </div>
+
+          <div className="uploadimagecolumn">
+            <img className="uploadimageimage" src={visitingspotimage} alt="visitingspotimage"></img>
+          </div>
+
+        </div>
 
          <div className="uploadimagerow">
 
