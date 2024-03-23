@@ -2,12 +2,12 @@ import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import {Link} from 'react-router-dom';
 import './productcard.css';
-
+import poojathali from '../assets/pooja-thali.webp';
 const product =
   {
-    name : "Blue Tshirt",
-    price : "500",
-    images : [{url:'https://static05.jockey.in/c_scale,h_640,w_480/jockey/uploads/dealimages/10081/originalimages/move-blue-t-shirt-mv01-119.jpg'}],
+    name : "Neev Brass Puja Thali",
+    price : "855",
+    image : poojathali,
     _id : "saurav",
     numOfReviews: 100,
     rating: 5
@@ -24,7 +24,7 @@ export default function ProductCard() {
 }
   return (
    <Link className='productCard' to={`/product/${product._id}`}>
-    <img src={product.images[0].url} alt={product.name} />
+    <img src={product.image} alt={product.name} />
     <p>{product.name}</p>
     <div>
         <ReactStars {...options} /> <span>({product.numOfReviews} Reviews)</span>

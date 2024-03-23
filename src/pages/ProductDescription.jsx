@@ -3,12 +3,12 @@ import ReactStars from "react-rating-stars-component";
 import '../components/productdescription.css';
 // import ReviewCard from '../layout/ReviewCard/ReviewCard';
 import { useParams } from 'react-router-dom';
-
+import poojathali from '../assets/pooja-thali.webp';
 const product =
   {
-    name : "Blue Tshirt",
-    price : "500",
-    images : [{url:'https://static05.jockey.in/c_scale,h_640,w_480/jockey/uploads/dealimages/10081/originalimages/move-blue-t-shirt-mv01-119.jpg'}],
+    name : "Neev Brass Puja Thali",
+    price : "855",
+    image : poojathali,
     _id : "saurav",
     numOfReviews: 100,
     rating: 5
@@ -32,7 +32,7 @@ export default function ProductDescription() {
         <div className='ProductDetails'>
         <div>
 
-         <img className='CarouselImage' src={product.images[0].url} key={product.url} alt={product.name} />
+         <img className='CarouselImage' src={product.image} key={product.image} alt={product.name} />
            
         </div>
     <div>
