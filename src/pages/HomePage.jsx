@@ -47,7 +47,6 @@ export default function HomePage() {
       <RoomSection />
       {/* <SocialMediaSection /> */}
       <DailyOffer/>
-      <PopularPackages/>
       <RoomsCarausalSection />
       {/* <DailyOffer/> */}
       <ServiceTaxi/>

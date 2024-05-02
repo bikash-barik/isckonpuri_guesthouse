@@ -39,9 +39,7 @@ export default function RoomSection() {
             </h1> */}
             <p className="text-2xl font-semibold md:mt-3">Family Rooms 5</p>
             <p className="text-gray-800 tracking-wide md:leading-8 mt-2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.
+            With our expertly crafted designs, quality furnishings, and attention to detail, we're dedicated to creating spaces where families can come together, relax, and make lasting memories.
             </p>
 
             <button className={`px-6 py-2 md:mt-2 mt-3 ${model ? 'bg-red-700' :'bg-orange-500'} capitalize text-white rounded-md`} onClick={openModel}>

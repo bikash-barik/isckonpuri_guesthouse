@@ -152,7 +152,7 @@ const Rooms = ({roomdata}) => {
           <div className="price-desc">
             <div className="price">
               {/* <p className="rate">{room.rate}</p> */}
-              <span className="disratre">₹ {roomdata.roomprice}</span>
+              {/* <span className="disratre">₹ {roomdata.roomprice}</span> */}
               {/* <span className="discount">{room.discount}</span> */}
               <button className={`button-2 ${model ? 'bg-red-700' : 'bg-orange-500'}`}  onClick={openModel}>Book Now</button>
             </div>
