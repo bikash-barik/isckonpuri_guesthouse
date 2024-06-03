@@ -20,17 +20,20 @@ export default function Footer() {
         <p className="text-white md:max-w-[400px] text-justify ">{FooterSection_one}</p>
         <ul className="iconmenu">
                <li className="iconmenu-item">
-                       <a className="elementor-icon" href="https://facebook.com/"><i className="fab fa-facebook"></i></a>
+                       <a className="elementor-icon" href="https://www.facebook.com/share/ogaaLGuzVFuFG5Eo/?mibextid=qi2Omg"><i className="fab fa-facebook"></i></a>
                </li>
                <li className="iconmenu-item">
-                       <a className="elementor-icon" href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
+                       <a className="elementor-icon" href="https://x.com/iskconpuri12?t=p-dGTgRG5h3OqgF-912AKw&s=09"><i className="fab fa-twitter"></i></a>
                </li>
                <li className="iconmenu-item">
-                       <a className="elementor-icon" href="https://instagram.com/"><i className="fab fa-instagram"></i></a>
+                       <a className="elementor-icon" href="https://www.instagram.com/officialiskconpuri?igsh=cXZnNnZheTQ3MWRn"><i className="fab fa-instagram"></i></a>
                </li>
                <li className="iconmenu-item">
-                       <a className="elementor-icon" href="https://linkedin.com/"><i className="fab fa-linkedin-in"></i></a>
-               </li>     
+                       <a className="elementor-icon" href="https://www.linkedin.com/in/iskcon-puri-5395a4269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i className="fab fa-linkedin-in"></i></a>
+               </li> 
+               <li className="iconmenu-item">
+                       <a className="elementor-icon" href="https://youtube.com/@officialiskconpuri?si=5Lw34UREjIbOklwu"><i className="fab fa-linkedin-in"></i></a>
+               </li>         
         </ul>
       </section>
 

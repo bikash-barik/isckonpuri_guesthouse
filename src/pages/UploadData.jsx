@@ -525,6 +525,51 @@ const ImageUpload = () => {
     }
   };
 
+  const handleSubmitPopUpsection = async (e) => {
+    e.preventDefault();
+    try {
+      const firestore = firebase1.firestore();
+      const storage = firebase1.storage();
+      if (!file) {
+        alert("Please select an image.");
+        return;
+      }
+
+      setLoading(true);
+      setMessage({text:"Please wait until your data is submitted!..."});
+
+      await firestore.collection("PopUpData").get().then(querySnapshot => {
+        querySnapshot.forEach(doc => {
+          doc.ref.delete();
+        });
+      }); 
+      
+      const storageRef = storage.ref(`images/${file.name}`);
+      const uploadTask = storageRef.put(file);
+
+      const snapshot = await uploadTask;
+      const downloadURL = await snapshot.ref.getDownloadURL();
+
+      const timestamp = firebase1.firestore.FieldValue.serverTimestamp();
+      const submissionData = {
+        imageUrl: downloadURL,
+        submittedAt: timestamp,
+      };
+      await firestore.collection("PopUpData").add(submissionData);
+
+      setMessage({ type: 'success', text: 'Data submitted successfully!' });
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+      setFile(null);
+    } catch (error) {
+      setMessage({ type: 'error', text: 'Failed to submit data. Please try again.' });
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+    }
+  };
+
   const handleFileChange = (e) => {
     if (e.target.files[0]) {
       setFile(e.target.files[0]);
@@ -834,6 +879,24 @@ const ImageUpload = () => {
           </div>
 
         </div>
+
+        <div className="uploadimagerow">
+
+       <div className="uploadimagecolumn">
+        <div className="uploadimagecolumninnerdiv">
+     <h3>PopUp Section: </h3>
+     <label htmlFor="imageInput">Upload Image:</label>
+     <input type="file" id="imageInput" accept="image/*" onChange={handleFileChange} required/>
+
+     <button className="uploadimagebtn" onClick={handleSubmitPopUpsection} style={{ marginTop: "5px", borderRadius: "5px" }}>Upload</button>
+   </div>
+</div>
+
+<div className="uploadimagecolumn">
+<img className="uploadimageimage" src="/" alt="popupimage"></img>
+</div>
+
+</div>
 
         </div>
     }

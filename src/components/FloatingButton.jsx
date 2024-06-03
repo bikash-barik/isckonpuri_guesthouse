@@ -20,8 +20,8 @@ export default function FloatingActionButtons() {
       sx={{ "& > :not(style)": { m: 1 } }}
       style={{
         position: "fixed",
-        bottom: "152px",
-        right: "5px",
+        bottom: "130px",
+        left: "5px",
         display:'flex',
         zIndex: "999",
       }}

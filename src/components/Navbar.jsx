@@ -42,18 +42,18 @@ export default function Navbar() {
     <div className="topbarrow flex justify-between">
         <div className="col-xl-6 col-sm-6 col-md-8">
             <ul className="topbar_info flex flex-wrap d-none d-sm-flex px-8">
-                <li className="mx-4" ><a href="mailto:example@gmail.com"><i className="fas fa-envelope" aria-hidden="true"></i> info@iskconpuri.com</a>
+                <li className="mx-4" ><a href="mailto:example@gmail.com" style={{color:"var(--colorBlack)"}}><i className="fas fa-envelope" aria-hidden="true"></i> info@iskconpuri.com</a>
                 </li>
-                <li className="d-none d-md-block mx-4"><a href="callto:123456789"><i className="fas fa-phone" aria-hidden="true"></i>
+                <li className="d-none d-md-block mx-4"><a href="callto:123456789" style={{color:"var(--colorBlack)"}}><i className="fas fa-phone" aria-hidden="true"></i>
                 +91 8114735348</a></li>
             </ul>
         </div>
         <div className="col-xl-6 col-sm-6 col-md-4">
             <ul className="topbar_icon">
-                <li className="topbarIconli"><a href="/"><i class="fa-brands fa-facebook"></i></a> </li>
-                <li className="topbarIconli"><a href="/"><i className="fab fa-twitter"></i></a> </li>
-                <li className="topbarIconli"><a href="/"><i className="fab fa-linkedin-in"></i></a> </li>
-                <li className="topbarIconli"><a href="/"><i className="fab fa-behance"></i></a> </li>
+                <li className="topbarIconli"><a href="https://x.com/iskconpuri12?t=p-dGTgRG5h3OqgF-912AKw&s=09"><i class="fa-brands fa-facebook"></i></a> </li>
+                <li className="topbarIconli"><a href="https://x.com/iskconpuri12?t=p-dGTgRG5h3OqgF-912AKw&s=09"><i className="fab fa-twitter"></i></a> </li>
+                <li className="topbarIconli"><a href="https://www.linkedin.com/in/iskcon-puri-5395a4269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i className="fab fa-linkedin-in"></i></a> </li>
+                <li className="topbarIconli"> <a href="https://www.instagram.com/officialiskconpuri?igsh=cXZnNnZheTQ3MWRn"><i className="fab fa-instagram"></i></a></li>
             </ul>
         </div>
     </div>

@@ -2,7 +2,7 @@
     background-image: url(../assets/home-hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: 100% center;
     position: relative;
     color: #fff;
     display: flex;

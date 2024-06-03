@@ -18,6 +18,7 @@ import OurTeam from "../components/PrasadamHome";
 import DailyOffer from "../components/DailyOffer";
 // import PrasadamHeroSection from "../components/PrasadamHeroSection";
 import HomePageHeroSection from "../components/HomePageHeroSection";
+import PopupMenu from "../components/PopupMenu";
 
 export default function HomePage() {
   // const [loading, setLoading] = useState(true);
@@ -56,6 +57,7 @@ export default function HomePage() {
       {/* )} */}
       
       {/* <Footer/> */}
+      <PopupMenu/>
     </div>
   );
 }
