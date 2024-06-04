@@ -2,7 +2,7 @@ import React from "react";
 // import Herosection from "../components/Herosection";
 import ExploreSection from "../components/ExploreSection";
 import ImageContentSection from "../components/ImageContentSection";
-import HomeCarausalOne from "../components/HomeCarausalOne";
+// import HomeCarausalOne from "../components/HomeCarausalOne";
 import RoomSection from "../components/RoomSection";
 // import SocialMediaSection from "../components/SocialMediaSection";
 import RoomsCarausalSection from "../components/RoomsCarausalSection";
@@ -11,14 +11,15 @@ import RoomsCarausalSection from "../components/RoomsCarausalSection";
 // import Footer from "../components/Footer";
 // import OnScrollRevealComponent from "../animation/Revel";
 // import hotelbookingloader from '../assets/hotelbookingreloader.gif';
-import PopularPackages from "../components/PopularPackagesHome";
+// import PopularPackages from "../components/PopularPackagesHome";
 // import DailyOffer from "../components/DailyOffer";
 import ServiceTaxi from "../components/ServiceTaxi";
 import OurTeam from "../components/PrasadamHome";
 import DailyOffer from "../components/DailyOffer";
 // import PrasadamHeroSection from "../components/PrasadamHeroSection";
-import HomePageHeroSection from "../components/HomePageHeroSection";
+// import HomePageHeroSection from "../components/HomePageHeroSection";
 import PopupMenu from "../components/PopupMenu";
+import Home from "../components/Home";
 
 export default function HomePage() {
   // const [loading, setLoading] = useState(true);
@@ -40,7 +41,8 @@ export default function HomePage() {
         <>
       {/* <Herosection /> */}
       {/* <PrasadamHeroSection/> */}
-      <HomePageHeroSection/>
+      <Home/>
+      {/* <HomePageHeroSection/> */}
       <OurTeam/>
       <ExploreSection />
       <ImageContentSection />

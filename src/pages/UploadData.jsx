@@ -153,6 +153,35 @@ const ImageUpload = () => {
     }
   };
 
+  const handleUploadHeroSection = async (e) => {
+    e.preventDefault();
+    if (file) {
+      const storage = getStorage(firebase);
+      const storageRef = ref(
+        storage,`HeroSection/${file.name}`);
+
+      setLoading(true);
+      setMessage({text:"Please wait until your data is submitted!..."});
+
+      try {
+        await uploadBytes(storageRef, file);
+        
+        setMessage({ type: 'success', text: 'Data submitted successfully!' });
+        setTimeout(() => {
+          setLoading(false);
+        }, 5000);
+        setFile(null);
+      } catch (error) {
+        setMessage({ type: 'error', text: 'Failed to submit data. Please try again.' });
+        setTimeout(() => {
+          setLoading(false);
+        }, 5000);
+      }
+    } else {
+      alert("Please select an image.");
+    }
+  };
+
 
   const handleUploadPrasadam = async (e) => {
     e.preventDefault();
@@ -628,6 +657,23 @@ const ImageUpload = () => {
           </div>
 
         </div>
+
+        <div className="uploadimagerow">
+
+<div className="uploadimagecolumn">
+  <div className="uploadimagecolumninnerdiv">
+    <h3 className="mb-8 text-center font-bold text-2xl">Hero Section: </h3>
+    <input type="file" className="mb-4" onChange={handleFileChange} />
+
+    <button className="uploadimagebtn" onClick={handleUploadHeroSection} style={{ marginTop: "5px", borderRadius: "5px" }}>Upload</button>
+  </div>
+</div>
+
+<div className="uploadimagecolumn">
+  <img className="uploadimageimage" src="/" alt="herosectionimage"></img>
+</div>
+
+</div>
 
 
         <div className="uploadimagerow">

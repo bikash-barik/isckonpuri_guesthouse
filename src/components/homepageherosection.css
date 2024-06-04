@@ -1,8 +1,9 @@
 .heroscreendiv{
     background-image: url(../assets/home-hero-bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% center;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
     position: relative;
     color: #fff;
     display: flex;
