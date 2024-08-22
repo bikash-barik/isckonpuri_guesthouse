@@ -9,7 +9,7 @@ const PopupMenu = (props) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIsVisible(true);
-    }, 1000);
+    }, 30000);
 
     return () => clearInterval(intervalId);
   }, []);

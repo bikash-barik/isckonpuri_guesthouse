@@ -76,7 +76,7 @@ export default function Download() {
                                         <p>
                                             {/* <span>Available on the</span> */}
                                             <i className="fas fa-phone" aria-hidden="true"></i> 
-                                            +91- 8114 735 348
+                                            +91- 8879 507 509
                                         </p>
                                     </a>
                                 </li>
