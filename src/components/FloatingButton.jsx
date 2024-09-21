@@ -37,7 +37,7 @@ export default function FloatingActionButtons() {
           <motion.a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://wa.me/8114735348"
+            href="https://wa.me/6370995573"
           >
             <FaWhatsapp style={{ fontSize: " 30px", color: "white" }} />
           </motion.a>

@@ -45,7 +45,7 @@ export default function Navbar() {
                 <li className="mx-4" ><a href="mailto:example@gmail.com" style={{color:"var(--colorBlack)"}}><i className="fas fa-envelope" aria-hidden="true"></i> info@iskconpuri.com</a>
                 </li>
                 <li className="d-none d-md-block mx-4"><a href="callto:123456789" style={{color:"var(--colorBlack)"}}><i className="fas fa-phone" aria-hidden="true"></i>
-                +91 8114735348</a></li>
+                +91 6370995573</a></li>
             </ul>
         </div>
         <div className="col-xl-6 col-sm-6 col-md-4">

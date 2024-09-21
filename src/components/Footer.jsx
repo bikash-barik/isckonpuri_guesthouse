@@ -67,7 +67,7 @@ export default function Footer() {
               <p className="text-white text-lg font-semibold">{phoneNumber}</p>         
             </div>
         </div>
-
+       
         <div className="items-center gap-5 my-4">
           <div className="mb-2">
               <h3 className="text-white text-xl font-semibold">Email</h3>
