@@ -51,7 +51,7 @@ export default function Home() {
        {
         slides && slides.length > 0 ? <img className='sliderimage' src={slides[0]} alt="" />
         :
-        <img className='sliderimage' src={slides[0]} alt="" />
+        <img className='sliderimage' src={slides && slides[0] && slides[0]} alt="" />
        }
       </div>
     </>

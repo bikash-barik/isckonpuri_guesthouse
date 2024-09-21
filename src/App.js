@@ -34,6 +34,10 @@ import "./App.css";
 import NotFound from "./pages/NotFound.jsx";
 import Shoping from "./pages/Shoping.jsx";
 import ProductDescription from "./pages/ProductDescription.jsx";
+import PrasadhBookingForm from "./components/PrasadhBookingForm.jsx";
+import FoodBookingForm from "./components/FoodBookingForm.jsx";
+import BookNowForm from "./components/BookNowForm.jsx";
+import TaxiBookingForm from "./components/TaxiBookingForm.jsx";
 
 const isAuthenticated = () => {
   // Check Firebase if there's a logged-in user
@@ -104,8 +108,16 @@ const routes = [
         element:<RoomsSuite/> 
       },
       {
+        path:"/guesthouse-booking",
+        element:<TaxiBookingForm/>
+      },
+      {
         path:"/prasadam",
         element:<PrasadamPage/> 
+      },
+      {
+        path:"/prasadh-booking",
+        element:<FoodBookingForm/>
       },
       {
         path:"/shopping",

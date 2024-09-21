@@ -3,7 +3,7 @@ import './booknowform.css';
 // import { IoMdClose } from "react-icons/io";
 import axios from "axios";
 import loadingImage from '../assets/hotelbookingreloader.gif';
-export default function BookNowForm() {
+export default function TaxiBookingForm() {
 
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState({});
@@ -122,7 +122,7 @@ export default function BookNowForm() {
           </div>
     </section>
     :
-    <section className="booknowection mt-28">
+    <section className="booknowsection mt-28">
      
       <div className="booknowrow1">
       <h1 className='booknowheading'>Book Now Form</h1>
