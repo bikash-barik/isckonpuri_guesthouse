@@ -38,6 +38,7 @@ import PrasadhBookingForm from "./components/PrasadhBookingForm.jsx";
 import FoodBookingForm from "./components/FoodBookingForm.jsx";
 import BookNowForm from "./components/BookNowForm.jsx";
 import TaxiBookingForm from "./components/TaxiBookingForm.jsx";
+import Query from "./pages/Query.jsx";
 
 const isAuthenticated = () => {
   // Check Firebase if there's a logged-in user
@@ -158,6 +159,10 @@ const routes = [
       {
         path:"/privacy-policy",
         element:<Privacypolicy/>
+      },
+      {
+        path:"/query",
+        element:<Query/>
       }
     ],
   },
