@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import './Query.css';
-
+import loadingImage from '../assets/hotelbookingreloader.gif';
+import '../components/contactus.css';
 const Query = () => {
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [query, setQuery] = useState('');
+
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState({});
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -15,6 +19,8 @@ const Query = () => {
     }
 
     try {
+      setLoading(true);
+      setMessage({text:"Wait Until Your Data is Submitted!..."})
       const response = await fetch('https://iskconpuriguesthouse-backend.onrender.com/helpForm', {
         method: 'POST',
         headers: {
@@ -28,20 +34,48 @@ const Query = () => {
       });
 
       if (response.ok) {
-        alert('Thank you for contacting us. We will get back to you soon.');
         setName('');
         setMobile('');
         setQuery('');
+        setMessage({ type: 'success', text: 'Data submitted successfully!' });
+        setTimeout(() => {
+          setLoading(false);
+        }, 5000);
       } else {
         alert('Something went wrong. Please try again later.');
       }
     } catch (error) {
-      alert('Network error. Please check your connection and try again.');
-      console.error("Network error:", error);
+      setMessage({ type: 'error', text: error });
+      setTimeout(() => {
+       setLoading(false);
+     }, 5000);
     }
   };
 
   return (
+    <>
+    {
+      loading ?
+      <section
+      style={{
+        height: "90vh",
+        display: "flex",
+        flexDirection:"column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <img
+        src={loadingImage}
+        alt="Loading"
+        className="loading-image"
+        style={{ width: "300px",height:"300px" }}
+      />
+      <div className="loadingimagemessage">
+          <h2 style={{ color: message.type === 'success' ? 'green' : message.type === 'error' ? 'red' :'yellow'}}>{message.text}</h2>
+          </div>
+    </section>
+    :
     <div className="container">
       <h2 className="header">Feel Free to Submit Your Query!</h2>
 
@@ -70,6 +104,9 @@ const Query = () => {
         <button type="submit" className="button">Submit</button>
       </form>
     </div>
+    }
+    </>
+    
   );
 };
 
