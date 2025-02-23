@@ -11,8 +11,8 @@ export default function FooterAbove() {
             <i className="fas fa-phone" aria-hidden="true"></i>
             </div>
             <div className="info-card_content">
-            <p className="info-card_text">Mobile Number</p>
-              <p>+91- 8879 507 509</p>
+            <p className="info-card_text">WhatsApp Number</p>
+              <p>+91- 6370 995 573</p>
               
             </div>
         </div>
