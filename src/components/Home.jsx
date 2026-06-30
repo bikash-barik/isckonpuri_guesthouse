@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./home.css";
+import ImageSlider from "./ImageSlider";
 
 import { initializeApp } from "firebase/app";
 import {
   getFirestore,
   collection,
   getDocs,
-  orderBy,
   query,
+  orderBy,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -20,61 +21,62 @@ const firebaseConfig = {
   measurementId: "G-QN23VJ28YT",
 };
 
+// Initialize Firebase only once
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// Default images
 const DEFAULT_IMAGES = [
   "https://res.cloudinary.com/dgtpy2d2i/image/upload/v1782840310/Puri-slider_tbhacl.png",
   "https://res.cloudinary.com/dgtpy2d2i/image/upload/v1781020201/iskconpuri2026_pcr0fv.jpg",
 ];
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
 export default function Home() {
   const [slides, setSlides] = useState(DEFAULT_IMAGES);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchImages = async () => {
+    const fetchHeroImages = async () => {
       try {
-        const q = query(
-          collection(db, "HeroSectionData"),
-          orderBy("submittedAt", "asc")
-        );
+        const heroRef = collection(db, "HeroSectionData");
 
-        const querySnapshot = await getDocs(q);
+        const q = query(heroRef, orderBy("submittedAt", "asc"));
 
-        const images = [];
+        const snapshot = await getDocs(q);
 
-        querySnapshot.forEach((doc) => {
+        const imageList = [];
+
+        snapshot.forEach((doc) => {
           const data = doc.data();
 
-          if (data.imageUrl) {
-            images.push(data.imageUrl);
+          if (data.imageUrl && data.imageUrl.trim() !== "") {
+            imageList.push(data.imageUrl);
           }
         });
 
-        // If Firestore has images use them otherwise use default images
-        if (images.length > 0) {
-          setSlides(images);
+        if (imageList.length > 0) {
+          setSlides(imageList);
         } else {
           setSlides(DEFAULT_IMAGES);
         }
       } catch (error) {
-        console.error("Error fetching images:", error);
-
-        // On error also use default images
+        console.error("Error fetching hero images:", error);
         setSlides(DEFAULT_IMAGES);
+      } finally {
+        setLoading(false);
       }
     };
 
-    fetchImages();
+    fetchHeroImages();
   }, []);
 
   return (
     <div className="homeee">
-      <img
-        className="sliderimage"
-        src={slides[0]}
-        alt="Hero Banner"
-      />
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <ImageSlider slides={slides} />
+      )}
     </div>
   );
 }
