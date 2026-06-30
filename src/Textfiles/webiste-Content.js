@@ -1,6 +1,6 @@
 // * homepage Herosection content
 
-export const HerosectionHeading = "Welcome to Guest House";
+export const HerosectionHeading = "Welcome to Hotel Booking";
 export const HerosectionSubHeading = "Find Deals On Hotel";
 
 export const HeroSectioncardData = [
