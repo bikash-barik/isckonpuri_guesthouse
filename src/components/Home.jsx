@@ -27,8 +27,7 @@ const db = getFirestore(app);
 
 // Default images
 const DEFAULT_IMAGES = [
-  "https://res.cloudinary.com/dgtpy2d2i/image/upload/v1782840310/Puri-slider_tbhacl.png",
-  "https://res.cloudinary.com/dgtpy2d2i/image/upload/v1781020201/iskconpuri2026_pcr0fv.jpg",
+  "https://res.cloudinary.com/dgtpy2d2i/image/upload/v1784053276/iskconpurislider_lpuacq.png"
 ];
 
 export default function Home() {
